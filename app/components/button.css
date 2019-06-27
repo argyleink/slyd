@@ -1,0 +1,13 @@
+button {
+  cursor: pointer;
+  display: inline-grid;
+  gap: 0.5em;
+  grid-auto-flow: columns;
+  padding: 1em 2em;
+  margin: 0;
+  border: none;
+  background: hsla(0, 0%, 0%, 20%);
+  color: var(--text-color-1);
+  border-bottom: 2px solid var(--brand-color-1);
+  font-size: 1.5rem;
+}

@@ -1,0 +1,14 @@
+slides {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: 100vh;
+  grid-template-columns: 100vw;
+  
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+  & > * {
+    scroll-snap-align: center;
+    transform-style: preserve-3d;
+  }
+}

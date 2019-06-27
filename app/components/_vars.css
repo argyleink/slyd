@@ -1,0 +1,18 @@
+:root {
+  --hue: 200;
+  --saturation: 2%;
+  --lightness: 7%;
+
+  --surface-1: hsl(var(--hue) var(--saturation) var(--lightness));
+  --surface-2: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 1.1));
+
+  --text-color-1: hsl(var(--hue) var(--saturation) 87%);
+  --text-color-2: hsl(var(--hue) var(--saturation) 50%);
+  --text-color-3: hsl(var(--hue) var(--saturation) 38%);
+
+  --brand-color-1: hsl(var(--hue) 45% 60%);
+  --brand-color-2: hsl(calc(var(--hue) * 1.5) 95% 80%);
+
+  /* https://easings.net */
+  --easing: ease-out-expo;
+}

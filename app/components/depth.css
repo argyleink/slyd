@@ -1,0 +1,11 @@
+main { perspective: 50px; }
+/* slides { perspective: 50px; } */
+
+a {
+  display: inline-block;
+  transform: translateZ(5px);
+}
+
+h2 {
+  transform: translateZ(-10px);
+}

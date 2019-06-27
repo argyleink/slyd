@@ -1,0 +1,6 @@
+article {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-auto-flow: row;
+}
