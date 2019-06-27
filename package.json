@@ -13,9 +13,7 @@
     "dev:server": "browser-sync start --server 'app' --files 'app/index.html,app/bundle.css,app/bundle.js' --no-open"
   },
   "license": "ISC",
-  "dependencies": {
-    "brace": "^0.11.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.4",
     "concurrently": "^4.1.0",
