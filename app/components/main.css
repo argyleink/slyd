@@ -5,10 +5,13 @@ main {
   grid-template-rows: 100vh;
 
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  
+  scroll-snap-type: x mandatory;
 
   & > * {
     scroll-snap-align: center;
+    scroll-snap-stop: always;
   }
 }
