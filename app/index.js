@@ -1,6 +1,3 @@
-// import Whatever from 'https://unpkg.com/whatever'
-// import Whatever from 'whatever'
-
-import { default as index_css }  from './index.css'
-
-console.info(index_css)
+import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js'
+import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/line-numbers/prism-line-numbers.min.js'
+import 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js'

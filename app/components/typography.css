@@ -1,4 +1,5 @@
 a {
+  display: inline-block;
   color: var(--brand-color-2);
 }
 

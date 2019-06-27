@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>App Starter</title>
+    <title>Slide.css</title>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,11 @@
     <meta name="theme-color" content="#111111">
     <meta name="description" content="">
 
+    <link rel="preload" href="//cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/line-numbers/prism-line-numbers.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="//unpkg.com/prism-themes/themes/prism-atom-dark.css" as="style" onload="this.rel='stylesheet'">
+    
     <link rel="stylesheet" href="bundle.css">
+
     <script src="bundle.js" type="module" async></script>
   </head>
   <body>
@@ -20,14 +24,21 @@
           <div>
             <h1>slide 1a</h1>
             <h2>subtitle</h2>
-            <a href="#">play test</a>
-            <button>Test button</button>
+            <a href="#">link preview</a><br>
+            <button>Button Preview</button>
           </div>
         </article>
-        <article>
-          <h1>slides 1b</h1>
+        <article id="s1b">
+          <div>
+            <h1>slides 1b</h1>
+            <pre class="language-css line-numbers show-language"><code>
+              nav > a:not(:last-child) { 
+                color: hotpink;
+              }
+            </code></pre>
+          </div>
         </article>
-        <article>
+        <article id="s1c">
           <div>
             <h1>slide 1c</h1>
             <h2>subtitle</h2>
@@ -35,20 +46,20 @@
         </article>
       </slides>
 
-      <slides>
+      <slides id="s2">
         <article>
           <h1>slides 2</h1>
         </article>
       </slides>
 
-      <slides>
+      <slides id="s3">
         <article>
           <div>
             <h1>slides 3a</h1>
             <h2>subtitle</h2>
           </div>
         </article>
-        <article>
+        <article id="s3b">
           <div>
             <h1>slides 3b</h1>
             <h2>subtitle</h2>
@@ -68,7 +79,7 @@
         </article>
       </slides>
 
-      <slides>
+      <slides id="s4">
         <article>
           <h1>slides 4</h1>
         </article>

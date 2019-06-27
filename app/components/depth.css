@@ -1,11 +1,6 @@
 main { perspective: 50px; }
 /* slides { perspective: 50px; } */
-
-a {
-  display: inline-block;
-  transform: translateZ(5px);
-}
-
-h2 {
-  transform: translateZ(-10px);
-}
+a { transform: translateZ(5px); margin: 2rem 0; }
+button { transform: translateZ(3px); margin: 2rem 0; }
+h2 { transform: translateZ(-10px); }
+pre { transform: translateZ(20px); }

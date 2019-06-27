@@ -1,4 +1,3 @@
-/* @import 'css-from-npm'; */
 @import './components/_vars.css';
 
 @import './components/body.css';
@@ -10,3 +9,4 @@
 @import './components/depth.css';
 
 @import './components/button.css';
+@import './components/prism.css';

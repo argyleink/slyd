@@ -3,4 +3,6 @@ article {
   display: grid;
   place-items: center;
   grid-auto-flow: row;
+
+  text-align: center;
 }

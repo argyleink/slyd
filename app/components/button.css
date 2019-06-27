@@ -1,13 +1,31 @@
 button {
+  --bg: var(--brand-color-1);
+  --bg-hover: hsl(var(--hue) 80% 40%);
+
   cursor: pointer;
   display: inline-grid;
+  position: relative;
   gap: 0.5em;
   grid-auto-flow: columns;
   padding: 1em 2em;
   margin: 0;
   border: none;
-  background: hsla(0, 0%, 0%, 20%);
+  border-radius: 3rem;
+  background: var(--bg);
   color: var(--text-color-1);
-  border-bottom: 2px solid var(--brand-color-1);
+  text-shadow: 0 .5px .5px var(--bg-hover);
   font-size: 1.5rem;
+
+
+  &:hover {
+    background: var(--bg-hover);
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  &:focus:not(:focus-visible) { 
+    outline: none;
+  }
 }
