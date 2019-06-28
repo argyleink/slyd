@@ -1,31 +1,66 @@
-button {
+.button {
   --bg: var(--brand-color-1);
   --bg-hover: hsl(var(--hue) 80% 40%);
+  --text: var(--text-color-1);
 
   cursor: pointer;
   display: inline-grid;
   position: relative;
-  gap: 0.5em;
+  gap: .5em;
   grid-auto-flow: columns;
-  padding: 1em 2em;
+  padding: .5em 1.5em;
   margin: 0;
   border: none;
   border-radius: 3rem;
   background: var(--bg);
-  color: var(--text-color-1);
+  color: var(--text);
   text-shadow: 0 .5px .5px var(--bg-hover);
-  font-size: 1.5rem;
+  border: 2px solid transparent;
+  
+  --fluid-type-min-size: .75;
+  --fluid-type-max-size: 1.5;
+  --fluid-type-min-screen: 20;
+  --fluid-type-max-screen: 88;
 
+  font-size: calc(
+    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
+      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
+  );
 
   &:hover {
     background: var(--bg-hover);
   }
 
   &:active {
-    top: 1px;
+    top: 2px;
   }
 
   &:focus:not(:focus-visible) { 
     outline: none;
+  }
+
+  &.button-secondary {
+    --bg: var(--brand-color-2);
+    --bg-hover: hsl(calc(var(--hue) * 1.5) 85% 70%);
+    --text: hsl(calc(var(--hue) * 1.5) 90% 98%);
+  }
+
+  &.button-ghost {
+    --bg: transparent;
+    --bg-hover: hsla(var(--hue), 80%, 40%, 10%);
+    --text: var(--brand-color-1);
+    text-shadow: none;
+    border: 2px solid var(--brand-color-1);
+  }
+
+  &.button-link {
+    --bg: transparent;
+    --bg-hover: transparent;
+    --text: var(--brand-color-2);
+    text-shadow: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

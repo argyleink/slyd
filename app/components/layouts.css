@@ -1,0 +1,14 @@
+[v-list] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+[h-list] > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+hr {
+  margin: 3rem 0 !important;
+  padding: 0;
+  border-bottom: none;
+  border-top: 1px solid var(--brand-color-1);
+}

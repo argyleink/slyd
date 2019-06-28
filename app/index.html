@@ -21,16 +21,14 @@
 
       <slides>
         <article>
-          <div>
-            <h1>slide 1a</h1>
-            <h2>subtitle</h2>
-            <a href="#">link preview</a><br>
-            <button>Button Preview</button>
+          <div v-list>
+            <h1>slid</h1>
+            <h2>a minimalist's slide deck</h2>
           </div>
         </article>
         <article id="s1b">
-          <div>
-            <h1>slides 1b</h1>
+          <div v-list>
+            <h3>embed code</h3>
             <pre class="language-css line-numbers show-language"><code>
               nav > a:not(:last-child) { 
                 color: hotpink;
@@ -39,40 +37,54 @@
           </div>
         </article>
         <article id="s1c">
-          <div>
-            <h1>slide 1c</h1>
-            <h2>subtitle</h2>
+          <div v-list>
+            <h3>links:</h3>
+            <div h-list>
+              <a href="#">link preview</a>
+              <a href="#">link preview</a>
+            </div>
+            <hr>
+            <h3>buttons:</h3>
+            <div h-list>
+              <button class="button">Primary</button>
+              <button class="button button-secondary">Secondary</button>
+              <button class="button button-ghost">Ghost</button>
+              <button class="button button-link">Link</button>
+            </div>
           </div>
         </article>
       </slides>
 
       <slides id="s2">
         <article>
-          <h1>slides 2</h1>
+          <div v-list>
+            <h1>Slide 2</h1>
+            <button class="button">Button Preview</button>
+          </div>
         </article>
       </slides>
 
       <slides id="s3">
         <article>
-          <div>
+          <div v-list>
             <h1>slides 3a</h1>
             <h2>subtitle</h2>
           </div>
         </article>
         <article id="s3b">
-          <div>
+          <div v-list>
             <h1>slides 3b</h1>
             <h2>subtitle</h2>
           </div>
         </article>
         <article>
-          <div>
+          <div v-list>
             <h1>slides 3c</h1>
             <h2>subtitle</h2>
           </div>
         </article>
         <article>
-          <div>
+          <div v-list>
             <h1>slides 3d</h1>
             <h2>subtitle</h2>
           </div>

@@ -1,23 +1,28 @@
+[text-center] { text-align: center; }
+[text-right] { text-align: center; }
+
 a {
   display: inline-block;
   color: var(--brand-color-2);
+  font-size: 1.5rem;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
 /* https://andy-bell.design/wrote/custom-property-controlled-fluid-type-sizing/ */
 h1 {
-  --fluid-type-min-size: 4;
-  --fluid-type-max-size: 8;
+  --fluid-type-min-size: 2;
+  --fluid-type-max-size: 4;
   --fluid-type-min-screen: 20;
   --fluid-type-max-screen: 80;
 
   font-weight: lighter;
   letter-spacing: 0.2em;
   color: var(--text-color-1);
+  text-transform: uppercase;
 
   font-size: calc(
     (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
@@ -26,13 +31,29 @@ h1 {
 }
 
 h2 {
-  --fluid-type-min-size: 2;
-  --fluid-type-max-size: 4;
+  --fluid-type-min-size: 1.5;
+  --fluid-type-max-size: 3;
   --fluid-type-min-screen: 20;
   --fluid-type-max-screen: 88;
 
-  font-weight: normal;
+  font-weight: 300;
+  letter-spacing: 3px;
   color: var(--text-color-2);
+
+  font-size: calc(
+    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
+      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
+  );
+}
+
+h3 {
+  --fluid-type-min-size: 1.25;
+  --fluid-type-max-size: 2.5;
+  --fluid-type-min-screen: 20;
+  --fluid-type-max-screen: 88;
+
+  font-weight: lighter;
+  letter-spacing: 0.2em;
 
   font-size: calc(
     (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /

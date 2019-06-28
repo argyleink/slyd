@@ -3,6 +3,7 @@
 @import './components/body.css';
 @import './components/typography.css';
 
+@import './components/layouts.css';
 @import './components/main.css';
 @import './components/slides.css';
 @import './components/slide.css';

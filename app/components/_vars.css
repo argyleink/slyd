@@ -11,7 +11,7 @@
   --text-color-3: hsl(var(--hue) var(--saturation) 38%);
 
   --brand-color-1: hsl(var(--hue) 45% 60%);
-  --brand-color-2: hsl(calc(var(--hue) * 1.5) 95% 80%);
+  --brand-color-2: hsl(calc(var(--hue) * 1.5) 95% 75%);
 
   /* https://easings.net */
   --easing: ease-out-expo;
