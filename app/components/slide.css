@@ -4,4 +4,13 @@ article {
   place-items: center;
   grid-auto-flow: row;
   text-align: center;
+
+  background-image: 
+    radial-gradient(circle, hsla(0,0%,0%,50%) 0%, hsla(0,0%,0%,80%) 100%),
+    var(--image);
+  background-position: center center;
+  background-size: cover;
+
+  & > [v-list] { padding: 0 1rem; }
+  & > [h-list] { padding: 1rem 0; }
 }

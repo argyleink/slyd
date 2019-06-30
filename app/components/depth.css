@@ -1,8 +1,10 @@
 main { perspective: 30px; }
 /* slides { perspective: 50px; } */
 
-h1 { transform: translateZ(5px); }
 pre { transform: translateZ(10px); }
-a { transform: translateZ(2px); }
+h1 { transform: translateZ(5px); }
+/* picture { transform: translateZ(4px); } */
 button { transform: translateZ(3px); }
-h2 { transform: translateZ(-10px); }
+a { transform: translateZ(2px); }
+h3, h4, h5, h6 { transform: translateZ(2px); }
+h2 { transform: translateZ(1px); }
