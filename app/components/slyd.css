@@ -5,8 +5,10 @@ slyd {
   grid-auto-flow: row;
   text-align: center;
 
+  --darkness: 0;
+
   background-image: 
-    radial-gradient(circle, hsla(0,0%,0%,50%) 0%, hsla(0,0%,0%,80%) 100%),
+    radial-gradient(circle, hsla(0,0%,0%,var(--darkness)) 0%, hsla(0,0%,0%,var(--darkness)) 100%),
     var(--image);
   background-position: center center;
   background-size: cover;

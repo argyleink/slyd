@@ -20,20 +20,24 @@
     <main>
 
       <slyds>
+
         <slyd>
           <div v-list>
             <h1>slyd</h1>
             <h2>a minimalist's slide deck</h2>
           </div>
         </slyd>
+
         <slyd id="slyd-1b">
           <div v-list>
             <h3>bi-directional CSS parallax</h3>
           </div>
         </slyd>
+
       </slyds>
 
       <slyds>
+
         <slyd id="slyd-2a">
           <div v-list>
             <div text-left>
@@ -42,6 +46,7 @@
             </div>
           </div>
         </slyd>
+
         <slyd id="slyd-2b">
           <div v-list>
             <h3>Syntax Highlighting</h3>
@@ -58,6 +63,7 @@
             </code></pre>
           </div>
         </slyd>
+
         <slyd id="slyd-2c">
           <div v-list>
             <div h-list text-left>
@@ -79,9 +85,11 @@
             </div>
           </div>
         </slyd>
+
       </slyds>
 
       <slyds>
+
         <slyd id="slyd-3a">
           <div v-list>
             <div text-left>
@@ -90,14 +98,24 @@
             </div>
           </div>
         </slyd>
-        <slyd id="slyd-3b" style="--image: url(./images/starwars.png)">
+
+        <slyd id="slyd-3b" style="--image: url(./images/starwars.png); --darkness: 50%;">
           <div v-list>
             <h3>Background Images</h3>
             <br>
             <button class="button">Watch Preview</button>
           </div>
         </slyd>
-        <slyd id="slyd-3c">
+
+        <slyd id="slyd-3c" style="--image: url(./images/starwars.png); --darkness: 90%;">
+          <div v-list>
+            <h3>Control Darkness</h3>
+            <br>
+            <button class="button"><code>var(--darkness)</code></button>
+          </div>
+        </slyd>
+
+        <slyd id="slyd-3d">
           <div h-list text-left>
             <h3>Foreground Images</h3>
             <picture cover>
@@ -105,6 +123,7 @@
             </picture>
           </div>
         </slyd>
+
       </slyds>
 
     </main>
