@@ -1,4 +1,5 @@
 code[class*="language-"], pre[class*="language-"] {
+  color: var(--text-color-1);
   font-family: 'Dank Mono', 'Operator Mono', 'Inconsolata', 'Fira Mono', 'SF Mono', 'Monaco', 'Droid Sans Mono', 'Source Code Pro', monospace;
   display: inline-block;
 
@@ -30,4 +31,8 @@ code[class*="language-"], pre[class*="language-"] {
   &:matches(.parameter, .punctuation) {
     color: var(--brand-color-3);
   }
+}
+
+.line-numbers-rows > span:before {
+  color: var(--text-color-3);
 }

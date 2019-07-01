@@ -7,12 +7,12 @@
   --surface-2: hsl(var(--hue) var(--saturation) calc(var(--lightness) * 1.1));
 
   --text-color-1: hsl(var(--hue) var(--saturation) 87%);
-  --text-color-2: hsl(var(--hue) 5% 50%);
-  --text-color-3: hsl(var(--hue) 10% 35%);
+  --text-color-2: hsl(var(--hue) 5% 60%);
+  --text-color-3: hsl(var(--hue) 10% 40%);
 
-  --brand-color-1: hsl(var(--hue) 40% 60%);
-  --brand-color-2: hsl(calc(var(--hue) * 1.5) 95% 75%);
-  --brand-color-3: hsl(calc(var(--hue) * 1.2) 85% 80%);
+  --brand-color-1: hsl(var(--hue) 50% 75%);
+  --brand-color-2: hsl(calc(var(--hue) * 1.5) 65% 75%);
+  --brand-color-3: hsl(calc(var(--hue) * 1.2) 75% 80%);
 
   /* https://easings.net */
   --easing: ease-out-expo;

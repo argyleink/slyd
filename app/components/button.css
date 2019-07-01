@@ -1,8 +1,9 @@
 .button {
-  --bg: var(--brand-color-1);
-  --bg-hover: hsl(var(--hue) 80% 40%);
-  --text-shadow: hsl(var(--hue) 80% 20%);
-  --text: var(--text-color-1);
+  --button-theme: var(--hue);
+
+  --bg: hsl(var(--button-theme) 50% 75%);
+  --bg-hover: hsl(var(--button-theme) 50% 80%);
+  --text: hsl(var(--button-theme) 60% 15%);
 
   height: 2.5em;
   cursor: pointer;
@@ -16,11 +17,10 @@
   border-radius: 3rem;
   background: var(--bg);
   color: var(--text);
-  text-shadow: 0 1px 0 var(--text-shadow);
   border: 2px solid transparent;
   line-height: 1.4;
 
-  transition: background-color 1s ease;
+  transition: background-color .3s ease;
   
   --fluid-type-min-size: .75;
   --fluid-type-max-size: 1.5;
@@ -45,17 +45,16 @@
   }
 
   &.button-secondary {
-    --bg: var(--brand-color-2);
+    --button-theme: calc(var(--hue) * 1.5);
+    /* --bg: var(--brand-color-2);
     --bg-hover: hsl(calc(var(--hue) * 1.5) 85% 60%);
-    --text: hsl(calc(var(--hue) * 1.5) 90% 98%);
-    --text-shadow: hsl(calc(var(--hue) * 1.5) 85% 40%);
+    --text: hsl(calc(var(--hue) * 1.5) 60% 25%); */
   }
 
   &.button-ghost {
     --bg: transparent;
     --bg-hover: hsla(var(--hue), 80%, 40%, 10%);
     --text: var(--brand-color-1);
-    text-shadow: none;
     border: 2px solid var(--brand-color-1);
   }
 
@@ -63,7 +62,6 @@
     --bg: transparent;
     --bg-hover: transparent;
     --text: var(--brand-color-2);
-    text-shadow: none;
 
     &:hover {
       text-decoration: underline;
