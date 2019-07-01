@@ -1,14 +1,19 @@
-[v-list] > *:not(:last-child) {
-  margin-bottom: 1rem;
+[v-list] {
+  /* display: grid; */
+  /* gap: 1rem; */
+  
+  & > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
-[h-list] > *:not(:last-child) {
-  margin-right: 1rem;
-}
+[h-list] {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto;
+  align-items: center;
 
-hr {
-  margin: 3rem 0 !important;
-  padding: 0;
-  border-bottom: none;
-  border-top: 1px solid var(--brand-color-1);
+  & > *:not(:last-child) {
+    margin-right: 1rem;
+  }
 }

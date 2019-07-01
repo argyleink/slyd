@@ -12,5 +12,6 @@ article {
   background-size: cover;
 
   & > [v-list] { padding: 0 1rem; }
-  & > [h-list] { padding: 1rem 0; }
+  & > [h-list] { padding: 0 10%; }
+  & picture { padding: 0 10%; }
 }

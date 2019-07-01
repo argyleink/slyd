@@ -4,14 +4,4 @@ body {
   color: var(--text-color-1);
   font-family: system-ui;
   overflow: hidden;
-
-  --fluid-type-min-size: 0.5;
-  --fluid-type-max-size: 1.5;
-  --fluid-type-min-screen: 20;
-  --fluid-type-max-screen: 80;
-
-  font-size: calc(
-    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
-      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
-  );
 }

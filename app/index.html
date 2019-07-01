@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Slide.css</title>
+    <title>Slyd</title>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,91 +22,88 @@
       <slides>
         <article>
           <div v-list>
-            <h1>slid</h1>
+            <h1>slyd</h1>
             <h2>a minimalist's slide deck</h2>
           </div>
         </article>
-        <article id="s1b">
+        <article id="slide-1b">
           <div v-list>
-            <h3>embed code</h3>
-            <pre class="language-css line-numbers show-language"><code>
-              nav > a:not(:last-child) { 
-                color: hotpink;
-              }
-            </code></pre>
+            <h3>bi-directional CSS parallax</h3>
           </div>
-        </article>
-        <article id="s1c">
-          <div v-list>
-            <h3>links:</h3>
-            <div h-list>
-              <a href="#">link preview</a>
-              <a href="#">link preview</a>
-            </div>
-            <hr>
-            <h3>buttons:</h3>
-            <div h-list>
-              <button class="button">Primary</button>
-              <button class="button button-secondary">Secondary</button>
-              <button class="button button-ghost">Ghost</button>
-              <button class="button button-link">Link</button>
-            </div>
-          </div>
-        </article>
-      </slides>
-
-      <slides id="s2a">
-        <article style="--image: url(./images/starwars.png)">
-          <div v-list>
-            <h1>Slide 2a</h1>
-            <h3>Background Images</h3>
-            <button class="button">Watch Preview</button>
-          </div>
-        </article>
-        <article style="--image: url(./images/aliens.png)">
-          <div v-list>
-            <h1>Slide 2b</h1>
-            <button class="button">Play GIF</button>
-          </div>
-        </article>
-      </slides>
-
-      <slides id="s3">
-        <article>
-          <div v-list>
-            <h1>slides 3a</h1>
-            <h2>subtitle</h2>
-          </div>
-        </article>
-        <article id="s3b">
-          <div v-list>
-            <h1>slides 3b</h1>
-            <h2>subtitle</h2>
-          </div>
-        </article>
-        <article>
-          <div v-list>
-            <h1>slides 3c</h1>
-            <h2>subtitle</h2>
-          </div>
-        </article>
-        <article>
-          <div v-list>
-            <h1>slides 3d</h1>
-            <h2>subtitle</h2>
-          </div>
-        </article>
-      </slides>
-
-      <slides id="s4">
-        <article>
-          <h1>slides 4</h1>
         </article>
       </slides>
 
       <slides>
-        <article>
-          <h1>slides 5</h1>
+        <article id="slide-2a">
+          <div v-list>
+            <div text-left>
+              <small>comes with</small>
+              <h1>components</h1>
+            </div>
+          </div>
+        </article>
+        <article id="slide-2b">
+          <div v-list>
+            <h3>Syntax Highlighting</h3>
+            <br>
+            <pre class="language-js line-numbers show-language"><code>
+              document.querySelectorAll('.🤓')
+                .forEach(({style}) => 
+                  Object.assign(style, {
+                    backgroundColor: 'hsl(200 100% 90%)',
+                    color: 'hsl(200 82% 15%)',
+                    borderRadius: '1rem',
+                    padding: '.5rem 1rem',
+                  }))
+            </code></pre>
+          </div>
+        </article>
+        <article id="slide-2c">
+          <div v-list>
+            <div h-list text-left>
+              <h3>Links:</h3>
+              <div text-left>
+                <a href="#">link preview</a>
+                <a href="#">link preview</a>
+              </div>
+            </div>
+            <hr>
+            <div h-list text-left>
+              <h3>Buttons:</h3>
+              <div>
+                <button class="button">Primary</button>
+                <button class="button button-secondary">Secondary</button>
+                <button class="button button-ghost">Ghost</button>
+                <button class="button button-link">Link</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </slides>
+
+      <slides>
+        <article id="slide-3a">
+          <div v-list>
+            <div text-left>
+              <small>performantly</small>
+              <h1>embed images</h1>
+            </div>
+          </div>
+        </article>
+        <article id="slide-3b" style="--image: url(./images/starwars.png)">
+          <div v-list>
+            <h3>Background Images</h3>
+            <br>
+            <button class="button">Watch Preview</button>
+          </div>
+        </article>
+        <article id="slide-3c">
+          <div h-list text-left>
+            <h3>Foreground Images</h3>
+            <picture cover>
+              <img src="./images/aliens.png" alt="">
+            </picture>
+          </div>
         </article>
       </slides>
 

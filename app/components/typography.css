@@ -1,10 +1,18 @@
+[text-left] { text-align: left; }
 [text-center] { text-align: center; }
-[text-right] { text-align: center; }
+[text-right] { text-align: right; }
 
 a {
   display: inline-block;
   color: var(--brand-color-2);
   font-size: 1.5rem;
+}
+
+small {
+  font-size: 1.25rem;
+  color: var(--brand-color-2);
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 /* https://andy-bell.design/wrote/custom-property-controlled-fluid-type-sizing/ */
 h1 {
   --fluid-type-min-size: 2;
-  --fluid-type-max-size: 4;
+  --fluid-type-max-size: 5;
   --fluid-type-min-screen: 20;
   --fluid-type-max-screen: 80;
 
@@ -28,15 +36,19 @@ h1 {
     (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
       (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
   );
+
+  &:matches(+ h2, + h3) {
+    margin-top: -1rem;
+  }
 }
 
 h2 {
-  --fluid-type-min-size: 1.5;
-  --fluid-type-max-size: 3;
+  --fluid-type-min-size: 1.75;
+  --fluid-type-max-size: 3.5;
   --fluid-type-min-screen: 20;
   --fluid-type-max-screen: 88;
 
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 3px;
   color: var(--text-color-2);
 
@@ -52,8 +64,9 @@ h3 {
   --fluid-type-min-screen: 20;
   --fluid-type-max-screen: 88;
 
-  font-weight: lighter;
-  letter-spacing: 0.2em;
+  font-weight: 200;
+  letter-spacing: 5px;
+  color: var(--brand-color-3);
 
   font-size: calc(
     (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /

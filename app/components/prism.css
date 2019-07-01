@@ -12,3 +12,22 @@ code[class*="language-"], pre[class*="language-"] {
       (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
   );
 }
+
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid hsl(0, 0%, 20%);
+  width: 2.5em;
+}
+
+.token {
+  &:matches(.property, .keyword, .tag, .function) {
+    color: var(--brand-color-1);
+  }
+
+  &:matches(.selector, .attr-name, .string, .operator, .char, .builtin, .inserted) {
+    color: var(--brand-color-2);
+  }
+
+  &:matches(.parameter, .punctuation) {
+    color: var(--brand-color-3);
+  }
+}

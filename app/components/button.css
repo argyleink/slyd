@@ -1,21 +1,26 @@
 .button {
   --bg: var(--brand-color-1);
   --bg-hover: hsl(var(--hue) 80% 40%);
+  --text-shadow: hsl(var(--hue) 80% 20%);
   --text: var(--text-color-1);
 
+  height: 2.5em;
   cursor: pointer;
   display: inline-grid;
   position: relative;
   gap: .5em;
   grid-auto-flow: columns;
-  padding: .5em 1.5em;
+  padding: 0 1.25em;
   margin: 0;
   border: none;
   border-radius: 3rem;
   background: var(--bg);
   color: var(--text);
-  text-shadow: 0 .5px .5px var(--bg-hover);
+  text-shadow: 0 1px 0 var(--text-shadow);
   border: 2px solid transparent;
+  line-height: 1.4;
+
+  transition: background-color 1s ease;
   
   --fluid-type-min-size: .75;
   --fluid-type-max-size: 1.5;
@@ -41,8 +46,9 @@
 
   &.button-secondary {
     --bg: var(--brand-color-2);
-    --bg-hover: hsl(calc(var(--hue) * 1.5) 85% 70%);
+    --bg-hover: hsl(calc(var(--hue) * 1.5) 85% 60%);
     --text: hsl(calc(var(--hue) * 1.5) 90% 98%);
+    --text-shadow: hsl(calc(var(--hue) * 1.5) 85% 40%);
   }
 
   &.button-ghost {
