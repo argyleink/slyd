@@ -5,8 +5,8 @@
 
 @import './components/layouts.css';
 @import './components/main.css';
-@import './components/slides.css';
-@import './components/slide.css';
+@import './components/slyds.css';
+@import './components/slyd.css';
 @import './components/depth.css';
 
 @import './components/button.css';

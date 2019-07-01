@@ -1,4 +1,4 @@
-article {
+slyd {
   height: 100vh;
   display: grid;
   place-items: center;
@@ -11,6 +11,14 @@ article {
   background-position: center center;
   background-size: cover;
 
+  /* transition: transform .5s ease;
+  transform: scale(.9,.9);
+
+  &:focus-within {
+    transform: scale(1,1);
+  } */
+
+  /* spacing management of children */
   & > [v-list] { padding: 0 1rem; }
   & > [h-list] { padding: 0 10%; }
   & picture { padding: 0 10%; }

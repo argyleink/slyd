@@ -9,6 +9,7 @@ a {
 }
 
 small {
+  display: inline-block;
   font-size: 1.25rem;
   color: var(--brand-color-2);
   font-weight: 300;

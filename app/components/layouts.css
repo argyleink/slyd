@@ -12,6 +12,7 @@
   gap: 1rem;
   grid-template-columns: auto auto;
   align-items: center;
+  justify-content: flex-start;
 
   & > *:not(:last-child) {
     margin-right: 1rem;

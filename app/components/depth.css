@@ -13,4 +13,5 @@ button { transform: translateZ(3px); }
 } */
 a { transform: translateZ(2px); }
 h3, h4, h5, h6 { transform: translateZ(2px); }
+small { transform: translateZ(1px); }
 h2 { transform: translateZ(1px); }
