@@ -31,6 +31,10 @@ code[class*="language-"], pre[class*="language-"] {
   &:matches(.parameter, .punctuation) {
     color: var(--brand-color-3);
   }
+
+  &:matches(.property, .tag, .function) {
+    font-style: italic;
+  }
 }
 
 .line-numbers-rows > span:before {
