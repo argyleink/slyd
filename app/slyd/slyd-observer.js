@@ -17,5 +17,7 @@ const slyd_observer = new IntersectionObserver(slides => {
   threshold: 1,
 })
 
-document.querySelectorAll('slyd')
-  .forEach(slyd => slyd_observer.observe(slyd))
+Array.from(document.querySelectorAll('slyd'))
+  .filter((slyd, i) => i !== 0)
+  .forEach(slyd => 
+    slyd_observer.observe(slyd))
