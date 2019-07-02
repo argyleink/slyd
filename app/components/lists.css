@@ -1,12 +1,9 @@
-ol {
+ul, ol {
   display: grid;
   gap: .5rem;
   padding: 0;
   margin: 0;
   text-align: left;
-  
-  list-style: none;
-  counter-reset: slyd-list-counter;
 
   --fluid-type-min-size: 1.25;
   --fluid-type-max-size: 2.5;
@@ -19,14 +16,33 @@ ol {
   );
 }
 
+ul {
+  & > li:before {
+    position: relative;
+    top: -.15em;
+  }
+}
+
+ol {
+  list-style: none;
+  counter-reset: slyd-list-counter;
+
+  & > li {
+    counter-increment: slyd-list-counter;
+
+    &:before {
+      content: "0" counter(slyd-list-counter);
+    }
+  }
+}
+
 li {
-  counter-increment: slyd-list-counter;
   display: inline-flex;
   align-items: flex-start;
   font-weight: 300;
 
   &:before {
-    content: "0" counter(slyd-list-counter);
+    content: "»";
     color: var(--text-color-3);
     font-weight: bold;
     font-size: 1.5em;
