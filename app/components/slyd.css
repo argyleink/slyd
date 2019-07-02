@@ -13,7 +13,7 @@ slyd {
   background-position: center center;
   background-size: cover;
 
-  transition: transform 15s cubic-bezier(0.51, 0.01, 0.68, 0.99);
+  transition: transform 30s cubic-bezier(0.51, 0.01, 0.68, 0.99);
 
   &[active="true"] {
     transform: translateZ(2px);
