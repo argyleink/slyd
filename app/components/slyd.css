@@ -5,6 +5,7 @@ slyd {
   grid-auto-flow: row;
   text-align: center;
   overflow: hidden;
+  position: relative;
 
   --darkness: 0;
 
