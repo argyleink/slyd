@@ -1,0 +1,46 @@
+blockquote {
+  position: relative;
+  margin: 0 10%;
+  font-family: var(--serif);
+
+  --fluid-type-min-size: 2;
+  --fluid-type-max-size: 3;
+  --fluid-type-min-screen: 20;
+  --fluid-type-max-screen: 88;
+
+  font-size: calc(
+    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
+      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
+  );
+
+  &:before {
+    content: open-quote;
+    position: absolute;
+    top: -10vmax;
+    left: 0;
+
+    color: var(--text-color-3);
+    font-size: 20vmax;
+    margin-right: .5rem;
+  }
+
+  & > p {
+    letter-spacing: -2px;
+  }
+
+  & > footer {
+    font-family: var(--sans-serif);
+    font-weight: 200;
+    color: var(--brand-color-3);
+    font-size: .5em;
+
+    &:before {
+      display: block;
+      margin: 0 auto 1em;
+      content: "";
+      width: 1em;
+      height: 1px;
+      background-color: var(--brand-color-2);
+    }
+  }
+}

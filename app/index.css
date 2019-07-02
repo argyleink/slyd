@@ -10,6 +10,8 @@
 @import './components/depth.css';
 
 @import './components/button.css';
+@import './components/lists.css';
+@import './components/quotes.css';
 @import './components/dividers.css';
 @import './components/picture.css';
 @import './components/prism.css';

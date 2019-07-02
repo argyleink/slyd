@@ -1,20 +1,12 @@
 [v-list] {
-  /* display: grid; */
-  /* gap: 1rem; */
-  
-  & > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
+  display: grid;
+  gap: 1rem;
 }
 
 [h-list] {
   display: grid;
   gap: 1rem;
-  grid-template-columns: auto auto;
+  grid-auto-flow: column;
   align-items: center;
   justify-content: flex-start;
-
-  & > *:not(:last-child) {
-    margin-right: 1rem;
-  }
 }

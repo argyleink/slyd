@@ -10,9 +10,9 @@ a {
 
 small {
   display: inline-block;
-  font-size: 1.25rem;
   color: var(--brand-color-2);
   font-weight: 300;
+  font-size: 1.25rem;
   letter-spacing: 1px;
 }
 
@@ -65,7 +65,7 @@ h3 {
   --fluid-type-min-screen: 20;
   --fluid-type-max-screen: 88;
 
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 2px;
   color: var(--text-color-2);
 

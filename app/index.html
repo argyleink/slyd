@@ -28,7 +28,7 @@
           </div>
         </slyd>
 
-        <slyd id="slyd-1b">
+        <slyd id="two-way">
           <div v-list>
             <h3>bi-directional CSS parallax</h3>
           </div>
@@ -38,7 +38,7 @@
 
       <slyds>
 
-        <slyd id="slyd-2a">
+        <slyd id="batteries-included">
           <div v-list>
             <div text-left>
               <small>comes with</small>
@@ -47,7 +47,17 @@
           </div>
         </slyd>
 
-        <slyd id="slyd-2b">
+        <slyd id="lists">
+          <div v-list>
+            <ol>
+              <li>Quick</li>
+              <li>HTML</li>
+              <li>Customizable</li>
+            </ol>
+          </div>
+        </slyd>
+
+        <slyd id="code-highlighting">
           <div v-list>
             <h3>Syntax Highlighting</h3>
             <br>
@@ -64,25 +74,33 @@
           </div>
         </slyd>
 
-        <slyd id="slyd-2c">
+        <slyd id="links">
           <div v-list>
-            <div h-list text-left>
-              <h3>Links:</h3>
-              <div>
-                <a href="#">link preview</a>
-                <a href="#">link preview</a>
-              </div>
+            <h3>Links:</h3>
+            <a href="#">lowercase link</a>
+            <a href="#">Super Long Link With Fancy Underlines</a>
+          </div>
+        </slyd>
+
+        <slyd id="buttons">
+          <div v-list>
+            <h3>Buttons:</h3>
+            <div h-list>
+              <button class="button">Primary</button>
+              <button class="button button-secondary">Secondary</button>
+              <button class="button button-ghost">Ghost</button>
+              <button class="button button-link">Link</button>
             </div>
-            <hr>
-            <div h-list text-left>
-              <h3>Buttons:</h3>
-              <div h-list>
-                <button class="button">Primary</button>
-                <button class="button button-secondary">Secondary</button>
-                <button class="button button-ghost">Ghost</button>
-                <button class="button button-link">Link</button>
-              </div>
-            </div>
+          </div>
+        </slyd>
+
+        <slyd id="quotes">
+          <div v-list>
+            <blockquote>
+              <p>We got quotes</p>
+              <p>I won't have to yank out a bunch of guts to get a task done</p>
+              <footer>Adrock</footer>
+            </blockquote>
           </div>
         </slyd>
 
@@ -90,7 +108,7 @@
 
       <slyds>
 
-        <slyd id="slyd-3a">
+        <slyd id="embed-media">
           <div v-list>
             <div text-left>
               <small>performantly</small>
@@ -99,7 +117,7 @@
           </div>
         </slyd>
 
-        <slyd id="slyd-3b" style="--image: url(./images/starwars.png); --darkness: 50%;">
+        <slyd id="background-images" style="--image: url(./images/starwars.png); --darkness: 50%;">
           <div v-list>
             <h3>Background Images</h3>
             <br>
@@ -107,7 +125,7 @@
           </div>
         </slyd>
 
-        <slyd id="slyd-3c" style="--image: url(./images/starwars.png); --darkness: 90%;">
+        <slyd id="control-overlay" style="--image: url(./images/starwars.png); --darkness: 90%;">
           <div v-list>
             <h3>Control Darkness</h3>
             <br>
@@ -115,7 +133,7 @@
           </div>
         </slyd>
 
-        <slyd id="slyd-3d">
+        <slyd id="inline-images">
           <div h-list text-left>
             <h3>Foreground Images</h3>
             <picture cover>

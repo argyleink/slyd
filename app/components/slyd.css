@@ -4,6 +4,7 @@ slyd {
   place-items: center;
   grid-auto-flow: row;
   text-align: center;
+  overflow: hidden;
 
   --darkness: 0;
 
@@ -13,12 +14,12 @@ slyd {
   background-position: center center;
   background-size: cover;
 
-  transition: transform 30s cubic-bezier(0.51, 0.01, 0.68, 0.99);
+  /* transition: transform 30s cubic-bezier(0.51, 0.01, 0.68, 0.99);
 
   &[active="true"] {
     transform: translateZ(2px);
     transform-style: preserve-3d;
-  }
+  } */
 
   /* spacing management of children */
   & > [v-list] { padding: 0 1rem; }

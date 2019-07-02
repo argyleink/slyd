@@ -1,4 +1,7 @@
 :root {
+  --sans-serif: system-ui;
+  --serif: serif;
+
   --hue: 210;
   --saturation: 2%;
   --lightness: 7%;

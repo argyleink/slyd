@@ -5,6 +5,7 @@ slyds {
   grid-template-columns: 100vw;
   
   overflow-y: scroll;
+  overscroll-behavior-y: contain;
   -webkit-overflow-scrolling: touch;
   
   scroll-snap-type: y mandatory;
