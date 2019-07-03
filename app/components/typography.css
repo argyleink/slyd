@@ -1,7 +1,12 @@
 [text-left]   { text-align: left; }
 [text-center] { text-align: center; }
 [text-right]  { text-align: right; }
+
 [serif]       { font-family: var(--serif); }
+
+[bold]  { font-weight: bolder; }
+[book]  { font-weight: normal; }
+[thin]  { font-weight: lightest; }
 
 a {
   display: inline-block;
