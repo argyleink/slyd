@@ -1,4 +1,4 @@
 node_modules/
-app/bundle.css
-app/bundle.js
+app/slyd.css
+app/slyd.js
 .DS_Store

@@ -6,7 +6,7 @@ import { default as importHTTP } from 'import-http/rollup'
 export default {
   input: 'app/index.js',
   output: {
-    file: 'app/bundle.js',
+    file: 'app/slyd.js',
     format: 'es',
     sourcemap: 'inline',
   },
