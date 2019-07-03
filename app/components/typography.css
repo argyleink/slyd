@@ -1,17 +1,40 @@
 [text-left]   { text-align: left; }
 [text-center] { text-align: center; }
 [text-right]  { text-align: right; }
+[justify]     { text-align: justify; text-justify: inter-word; }
 
 [serif]       { font-family: var(--serif); }
 
 [bold]  { font-weight: bolder; }
 [book]  { font-weight: normal; }
+[light] { font-weight: 200; }
 [thin]  { font-weight: lightest; }
 
 a {
   display: inline-block;
   color: var(--brand-color-2);
   font-size: 1.5rem;
+}
+
+p {
+  max-width: var(--max-linelength);
+  font-size: 1.75rem;
+  font-weight: 300;
+
+  --fluid-type-min-size: 1.25;
+  --fluid-type-max-size: 2.5;
+  --fluid-type-min-screen: 20;
+  --fluid-type-max-screen: 88;
+
+  font-size: calc(
+    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
+      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
+  );
+
+  &[lead] {
+    line-height: 1.5;
+    font-weight: 200;
+  }
 }
 
 small {
@@ -68,7 +91,7 @@ h3, h4, h5, h6 {
 
   font-weight: 300;
   letter-spacing: 2px;
-  color: var(--text-color-2);
+  color: var(--text-color-3);
 }
 
 h4 {

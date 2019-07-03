@@ -1,12 +1,17 @@
 [v-list] {
   display: grid;
-  gap: 1rem;
+  gap: 1.5vmax;
 }
 
 [h-list] {
   display: grid;
-  gap: 1rem;
+  gap: 1.5vmax;
   grid-auto-flow: column;
   align-items: center;
   justify-content: flex-start;
+}
+
+[h-list], [v-list] {
+  &[bottom] { align-items: flex-end; }
+  &[top]    { align-items: flex-start; }
 }

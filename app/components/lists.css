@@ -2,7 +2,7 @@ ul, ol {
   display: grid;
   gap: .5rem;
   padding: 0;
-  margin: 0;
+  margin: 0 10vw;
   text-align: left;
 
   --fluid-type-min-size: 1.25;
@@ -40,6 +40,7 @@ li {
   display: inline-flex;
   align-items: flex-start;
   font-weight: 300;
+  max-width: var(--max-linelength);
 
   &:before {
     content: "»";

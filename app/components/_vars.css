@@ -19,4 +19,6 @@
 
   /* https://easings.net */
   --easing: ease-out-expo;
+
+  --max-linelength: 30ch;
 }
