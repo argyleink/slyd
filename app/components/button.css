@@ -46,16 +46,14 @@
 
   &.button-secondary {
     --button-theme: calc(var(--hue) * 1.5);
-    /* --bg: var(--brand-color-2);
-    --bg-hover: hsl(calc(var(--hue) * 1.5) 85% 60%);
-    --text: hsl(calc(var(--hue) * 1.5) 60% 25%); */
   }
 
   &.button-ghost {
-    --bg: transparent;
+    background: none;
     --bg-hover: hsla(var(--hue), 80%, 40%, 10%);
     --text: var(--brand-color-1);
-    border: 2px solid var(--brand-color-1);
+    border: 2px solid var(--bg);
+    color: var(--bg);
   }
 
   &.button-link {
