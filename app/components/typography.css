@@ -1,6 +1,7 @@
-[text-left] { text-align: left; }
+[text-left]   { text-align: left; }
 [text-center] { text-align: center; }
-[text-right] { text-align: right; }
+[text-right]  { text-align: right; }
+[serif]       { font-family: var(--serif); }
 
 a {
   display: inline-block;
@@ -10,33 +11,37 @@ a {
 
 small {
   display: inline-block;
-  color: var(--brand-color-2);
+  color: var(--text-color-2);
   font-weight: 300;
   font-size: 1.25rem;
   letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
   margin: 0;
   padding: 0;
+
+  --fluid-type-min-size: 1;
+  --fluid-type-max-size: 2;
+  --fluid-type-min-screen: 20;
+  --fluid-type-max-screen: 88;
+
+  font-size: calc(
+    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
+      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
+  );
 }
 
 /* https://andy-bell.design/wrote/custom-property-controlled-fluid-type-sizing/ */
 h1 {
   --fluid-type-min-size: 2;
   --fluid-type-max-size: 5;
-  --fluid-type-min-screen: 20;
-  --fluid-type-max-screen: 80;
 
   font-weight: lighter;
   letter-spacing: 0.2em;
   color: var(--text-color-1);
   text-transform: uppercase;
-
-  font-size: calc(
-    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
-      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
-  );
 
   &:matches(+ h2, + h3) {
     margin-top: -1rem;
@@ -46,31 +51,35 @@ h1 {
 h2 {
   --fluid-type-min-size: 1.75;
   --fluid-type-max-size: 3.5;
-  --fluid-type-min-screen: 20;
-  --fluid-type-max-screen: 88;
 
   font-weight: 200;
   letter-spacing: 3px;
   color: var(--text-color-2);
-
-  font-size: calc(
-    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
-      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
-  );
 }
 
-h3 {
+h3, h4, h5, h6 {
   --fluid-type-min-size: 1.25;
   --fluid-type-max-size: 2.5;
-  --fluid-type-min-screen: 20;
-  --fluid-type-max-screen: 88;
 
   font-weight: 300;
   letter-spacing: 2px;
   color: var(--text-color-2);
+}
 
-  font-size: calc(
-    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
-      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
-  );
+h4 {
+  --fluid-type-min-size: 1.25;
+  --fluid-type-max-size: 2;
+  font-weight: 400;
+}
+
+h5 {
+  --fluid-type-min-size: .75;
+  --fluid-type-max-size: 1.5;
+  font-weight: 500;
+}
+
+h6 {
+  --fluid-type-min-size: .5;
+  --fluid-type-max-size: 1;
+  font-weight: 600;
 }

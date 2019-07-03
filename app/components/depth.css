@@ -1,17 +1,12 @@
 main { perspective: 30px; }
-/* slides { perspective: 50px; } */
 
 pre { transform: translateZ(10px); }
 h1 { transform: translateZ(8px); }
+h2 { transform: translateZ(6px); }
+h3 { transform: translateZ(4px); }
 picture { transform: translateZ(4px); }
 button { transform: translateZ(3px); } 
-/* button { 
-  &:nth-of-type(1) {transform: translateZ(3px);} 
-  &:nth-of-type(2) {transform: translateZ(4px);} 
-  &:nth-of-type(3) {transform: translateZ(5px);} 
-  &:nth-of-type(4) {transform: translateZ(6px);} 
-} */
+h4 { transform: translateZ(3px); }
 a { transform: translateZ(2px); }
-h3, h4, h5, h6 { transform: translateZ(2px); }
+h5, h6 { transform: translateZ(2px); }
 small { transform: translateZ(1px); }
-h2 { transform: translateZ(1px); }
