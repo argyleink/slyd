@@ -4,5 +4,5 @@
   "start_url": "index.html",
   "background_color": "#111212",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "landscape"
 }
