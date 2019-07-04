@@ -1,6 +1,7 @@
 :root {
   --sans-serif: system-ui;
   --serif: serif;
+  --ampersand: 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
 
   --hue: 210;
   --saturation: 2%;
@@ -21,4 +22,5 @@
   --easing: ease-out-expo;
 
   --max-linelength: 30ch;
+  --bg-blur: .5rem;
 }

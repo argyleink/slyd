@@ -22,15 +22,34 @@
 
         <slyd>
           <div v-list>
-            <h1>slyd</h1>
+            <h1 uppercase>slyd</h1>
             <h2>a minimalist's slide deck</h2>
           </div>
         </slyd>
 
         <slyd id="two-way">
           <div v-list>
-            <h2 bold serif class="brand_color-1">OS Native</h2>
+            <h2 class="brand_color-1">2 Way</h2>
             <h3>bi-directional CSS parallax</h3>
+          </div>
+        </slyd>
+
+        <slyd id="natural-flow">
+          <div v-list>
+            <h2 class="brand_color-2">Natural</h2>
+            <h3>content enters and exits the stage</h3>
+          </div>
+        </slyd>
+
+        <slyd id="deep-links">
+          <div v-list>
+            <h2 class="brand_color-3">Deep Links</h2>
+          </div>
+        </slyd>
+
+        <slyd id="keyboard-support">
+          <div v-list>
+            <h2 class="text_color-1">keyboard support</h2>
           </div>
         </slyd>
 
@@ -47,6 +66,33 @@
           </div>
         </slyd>
 
+        <slyd id="quotes">
+          <div v-list>
+            <blockquote>
+              <p>What's the object-oriented way to become wealthy?</p>
+              <p>Inheritance.</p>
+              <footer>Claudio</footer>
+            </blockquote>
+          </div>
+        </slyd>
+
+        <slyd id="code-highlighting">
+          <div v-list>
+            <h3 serif class="text_color-1">Syntax Highlighting</h3>
+            <br>
+            <pre class="language-js line-numbers show-language"><code>
+              document.querySelectorAll('.🤓')
+                .forEach(({style}) => 
+                  Object.assign(style, {
+                    backgroundColor: 'hsl(200 100% 90%)',
+                    color: 'hsl(200 82% 15%)',
+                    borderRadius: '1rem',
+                    padding: '.5rem 1rem',
+                  }))
+            </code></pre>
+          </div>
+        </slyd>
+
         <slyd id="headings">
           <div v-list>
             <h1>Heading 1</h1>
@@ -60,18 +106,18 @@
 
         <slyd id="paragraphs">
           <div v-list>
-            <h3 class="brand_color-1">Regular and Leaded</h3>
+            <h3 class="brand_color-1">Regular <span serif ampersand>&</span> Leaded</h3>
             <div h-list top>
-              <p text-left>Milk, qui, french press half and half turkish kopi-luwak cortado half and half café au lait extraction chicory. Id est, aftertaste cultivar french press chicory siphon. Est organic café au lait sugar java in cup cortado qui turkish filter kopi-luwak.</p>
-              <p text-left lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go in or out, guess i'll just stand partway in and partway out, contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap into the air in greatest offense!</p>
+              <p text-left>Milk, qui, french press half and half turkish kopi-luwak cortado half and half café au lait extraction chicory. Id est, aftertaste cultivar french press chicory siphon.</p>
+              <p text-left lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
             </div>
           </div>
         </slyd>
 
         <slyd id="lead-paragraphs">
           <div v-list>
-            <h3 class="brand_color-1">Justified.</h3>
-            <p justify lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go in or out, guess i'll just stand partway in and partway out, contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap into the air in greatest offense!</p>
+            <h3 serif bold uppercase class="brand_color-1">Justified</h3>
+            <p justify lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
           </div>
         </slyd>
 
@@ -93,23 +139,6 @@
               <li>Fine</li>
               <li>Bullets</li>
             </ul>
-          </div>
-        </slyd>
-
-        <slyd id="code-highlighting">
-          <div v-list>
-            <h3 serif class="text_color-1">Syntax Highlighting</h3>
-            <br>
-            <pre class="language-js line-numbers show-language"><code>
-              document.querySelectorAll('.🤓')
-                .forEach(({style}) => 
-                  Object.assign(style, {
-                    backgroundColor: 'hsl(200 100% 90%)',
-                    color: 'hsl(200 82% 15%)',
-                    borderRadius: '1rem',
-                    padding: '.5rem 1rem',
-                  }))
-            </code></pre>
           </div>
         </slyd>
 
@@ -138,13 +167,22 @@
           </div>
         </slyd>
 
-        <slyd id="quotes">
+        <slyd id="decorators">
           <div v-list>
-            <blockquote>
-              <p>What's the object-oriented way to become wealthy?</p>
-              <p>Inheritance.</p>
-              <footer>Claudio</footer>
-            </blockquote>
+            <h1 bold serif uppercase class="brand_color-3">Decorators</h1>
+            <div h-list center>
+              <div v-list>
+                <h3 serif class="text_color-1">serif</h3>
+                <h3 uppercase class="text_color-2">uppercase</h3>
+                <h3 capitalize>capitalize</h3>
+              </div>
+              <span ampersand style="font-size:7vmax;">&</span>
+              <div v-list>
+                <h3 bold class="brand_color-1">brand colors</h3>
+                <h3 italic class="brand_color-2">on</h3>
+                <h3 uppercase class="brand_color-3">anything</h3>
+              </div>
+            </div>
           </div>
         </slyd>
 
@@ -154,14 +192,21 @@
 
         <slyd id="embed-media">
           <div v-list>
-            <div text-left>
-              <small>performantly</small>
-              <h1>embed images</h1>
+            <div>
+              <h1>embed<br>images</h1>
             </div>
           </div>
         </slyd>
 
-        <slyd id="background-images" style="--image: url(./images/starwars.png); --darkness: 50%;">
+        <slyd id="inline-images">
+          <div h-list text-left>
+            <picture cover>
+              <img src="./images/aliens.png" alt="">
+            </picture>
+          </div>
+        </slyd>
+
+        <slyd id="background-images" style="--image: url(./images/starwars.png);">
           <div v-list>
             <h3 class="text_color-1">Background Images</h3>
             <br>
@@ -171,18 +216,11 @@
 
         <slyd id="control-overlay" style="--image: url(./images/starwars.png); --darkness: 90%;">
           <div v-list>
-            <h3 class="text_color-1">Control Darkness</h3>
-            <br>
-            <button><code>var(--darkness)</code></button>
-          </div>
-        </slyd>
-
-        <slyd id="inline-images">
-          <div h-list text-left>
-            <h3 class="brand_color-2">Foreground Images</h3>
-            <picture cover>
-              <img src="./images/aliens.png" alt="">
-            </picture>
+            <blockquote>
+              <p>What's the object-oriented way to become wealthy?</p>
+              <p>Inheritance.</p>
+              <footer>Claudio</footer>
+            </blockquote>
           </div>
         </slyd>
 

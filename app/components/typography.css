@@ -2,13 +2,15 @@
 [text-center] { text-align: center; }
 [text-right]  { text-align: right; }
 [justify]     { text-align: justify; text-justify: inter-word; }
-
+[uppercase]   { text-transform: uppercase; }
+[capitalize]  { text-transform: capitalize; }
+[italic]      { font-style: italic; }
+[bold]        { font-weight: bolder; }
+[book]        { font-weight: normal; }
+[light]       { font-weight: 200; }
+[thin]        { font-weight: lightest; }
 [serif]       { font-family: var(--serif); }
-
-[bold]  { font-weight: bolder; }
-[book]  { font-weight: normal; }
-[light] { font-weight: 200; }
-[thin]  { font-weight: lightest; }
+[ampersand]   { font-size: 3em; position: relative; top: .2em; font-weight: lighter; }
 
 a {
   display: inline-block;
@@ -69,7 +71,6 @@ h1 {
   font-weight: lighter;
   letter-spacing: 0.2em;
   color: var(--text-color-1);
-  text-transform: uppercase;
 
   &:matches(+ h2, + h3) {
     margin-top: -1rem;

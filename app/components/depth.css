@@ -2,7 +2,7 @@ main { perspective: 30px; }
 
 pre { transform: translateZ(10px); }
 h1 { transform: translateZ(8px); }
-h2 { transform: translateZ(6px); }
+h2, blockquote, [ampersand] { transform: translateZ(6px); }
 h3 { transform: translateZ(4px); }
 picture { transform: translateZ(4px); }
 button { transform: translateZ(3px); } 

@@ -12,6 +12,7 @@
 }
 
 [h-list], [v-list] {
+  &[center] { place-content: center; }
   &[bottom] { align-items: flex-end; }
   &[top]    { align-items: flex-start; }
 }

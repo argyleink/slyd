@@ -1,7 +1,7 @@
 button {
   --button-theme: var(--hue);
 
-  --bg: hsl(var(--button-theme) 50% 75%);
+  --bg: hsla(var(--button-theme), 50%, 75%, 80%);
   --bg-hover: hsl(var(--button-theme) 50% 80%);
   --text: hsl(var(--button-theme) 60% 15%);
 
@@ -20,6 +20,7 @@ button {
   border: 2px solid transparent;
   line-height: 1.4;
 
+  backdrop-filter: blur(var(--bg-blur));
   transition: background-color .3s ease;
   
   --fluid-type-min-size: .75;

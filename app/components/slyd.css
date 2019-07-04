@@ -7,7 +7,7 @@ slyd {
   overflow: hidden;
   position: relative;
 
-  --darkness: 0;
+  --darkness: 50%;
 
   background-image: 
     radial-gradient(circle, hsla(0,0%,0%,var(--darkness)) 0%, hsla(0,0%,0%,var(--darkness)) 100%),
@@ -24,6 +24,6 @@ slyd {
 
   /* spacing management of children */
   & > [v-list] { padding: 0 1rem; }
-  & > [h-list] { padding: 0 10%; }
-  & picture { padding: 0 10%; }
+  & > [h-list] { padding: 0 10vw; }
+  & > picture:only-child { padding: 0 10vw; }
 }
