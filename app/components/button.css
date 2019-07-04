@@ -19,6 +19,7 @@ button {
   color: var(--text);
   border: 2px solid transparent;
   line-height: 1.4;
+  white-space: nowrap;
 
   backdrop-filter: blur(var(--bg-blur));
   transition: background-color .3s ease;
