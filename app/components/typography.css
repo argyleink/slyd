@@ -10,7 +10,7 @@
 [light]       { font-weight: 200; }
 [thin]        { font-weight: lightest; }
 [serif]       { font-family: var(--serif); }
-[ampersand]   { font-size: 3em; position: relative; top: .2em; font-weight: lighter; }
+[ampersand]   { font-size: 2.5em; position: relative; top: .2em; font-weight: lighter; }
 
 a {
   display: inline-block;
