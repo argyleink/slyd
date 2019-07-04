@@ -1,14 +1,24 @@
 [v-list] {
-  display: grid;
-  gap: 1.5vmax;
+  /* display: grid;
+  gap: 1.5vmax; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  & > * + * {
+    margin-top: 1.5vmax;
+  }
 }
 
 [h-list] {
-  display: grid;
-  gap: 1.5vmax;
-  grid-auto-flow: column;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  & > * + * {
+    margin-left: 1.5vmax;
+  }
 }
 
 [h-list], [v-list] {
