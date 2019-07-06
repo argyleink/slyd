@@ -3,4 +3,5 @@ body {
   background: var(--surface-1);
   color: var(--text-color-1);
   font-family: var(--sans-serif);
+  overflow: hidden;
 }
