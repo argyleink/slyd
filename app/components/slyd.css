@@ -1,10 +1,11 @@
 slyd {
   height: 100vh;
+  width: 100vw;
   display: grid;
   place-items: center;
   grid-auto-flow: row;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 
   --darkness: 50%;
