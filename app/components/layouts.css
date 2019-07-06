@@ -13,16 +13,18 @@
 
 [h-list] {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
 
-  & > * + * {
+  & > * {
     margin-left: 1.5vmax;
+    margin-bottom: 1.5vmax;
   }
 }
 
 [h-list], [v-list] {
-  &[center] { place-content: center; }
+  &:matches([center], [centered]) { justify-content: center; }
   &[bottom] { align-items: flex-end; }
   &[top]    { align-items: flex-start; }
 }
