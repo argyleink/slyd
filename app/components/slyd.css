@@ -7,6 +7,10 @@ slyd {
   overflow: hidden;
   position: relative;
 
+  &:focus:not(:focus-visible) { 
+    outline: none;
+  }
+
   --darkness: 50%;
 
   background-image: 
