@@ -17,8 +17,11 @@
   &:before {
     content: " ";
     position: absolute;
+    top: 0;
+    left: -.15em;
     width: 100%;
     height: 100%;
+    padding: 0 .1em;
     background: hsla(var(--hue), 50%, 75%, 20%);
     border-left: 2px solid var(--brand-color-1);
     border-right: 2px solid var(--brand-color-1);
