@@ -13,13 +13,18 @@
 
 [h-list] {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: flex-start;
+  padding: 0 2vmax;
 
   & > * {
     margin-left: 1.5vmax;
     margin-bottom: 1.5vmax;
+  }
+
+  @media (orientation: portrait) {
+    justify-content: center;
   }
 }
 

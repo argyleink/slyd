@@ -37,6 +37,12 @@ p {
     line-height: 1.5;
     font-weight: 200;
   }
+
+  @media (orientation: landscape) {
+    --max-linelength: 40vw;
+    --fluid-type-min-size: 1;
+    --fluid-type-max-size: 2.25;
+  }
 }
 
 small {
