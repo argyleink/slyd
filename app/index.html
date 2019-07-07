@@ -18,210 +18,208 @@
   <body>
     <slyds>
 
+      <slyd style="--section: 1;">
+        <div v-list>
+          <h1 uppercase>slyd</h1>
+          <h2>a minimalist's slide deck</h2>
+        </div>
+      </slyd>
 
-        <slyd>
-          <div v-list>
-            <h1 uppercase>slyd</h1>
-            <h2>a minimalist's slide deck</h2>
+      <slyd id="two-way" style="--section: 1;">
+        <div v-list>
+          <h2 class="brand_color-1">2 Way</h2>
+          <h3>bi-directional CSS parallax</h3>
+        </div>
+      </slyd>
+
+      <slyd id="natural-flow" style="--section: 2;">
+        <div v-list>
+          <h2 class="brand_color-2">Natural</h2>
+          <h3>content enters and exits the stage</h3>
+        </div>
+      </slyd>
+
+      <slyd id="deep-links">
+        <div v-list>
+          <h2 class="brand_color-3">Deep Links</h2>
+        </div>
+      </slyd>
+
+      <slyd id="keyboard-support">
+        <div v-list>
+          <h2 class="text_color-1">touch <span ampersand>&</span> keyboard support</h2>
+        </div>
+      </slyd>
+
+      <slyd id="themeable">
+        <div v-list>
+          <h2 class="text_color-1">Themeable</h2>
+        </div>
+      </slyd>
+
+
+      <slyd id="batteries-included">
+        <div v-list>
+          <div text-left>
+            <small>comes with</small>
+            <h1>components</h1>
           </div>
-        </slyd>
+        </div>
+      </slyd>
 
-        <slyd id="two-way">
-          <div v-list>
-            <h2 class="brand_color-1">2 Way</h2>
-            <h3>bi-directional CSS parallax</h3>
+      <slyd id="quotes">
+        <div v-list>
+          <blockquote>
+            <p>What's the object-oriented way to become wealthy?</p>
+            <p>Inheritance.</p>
+            <footer>Claudio</footer>
+          </blockquote>
+        </div>
+      </slyd>
+
+      <slyd id="code-highlighting">
+        <div v-list>
+          <h3 serif class="text_color-1" style="margin-bottom:2rem;">Syntax Highlighting</h3>
+          <pre class="language-js line-numbers show-language"><code>
+            document.querySelectorAll('.🤓')
+              .forEach(({style}) => 
+                Object.assign(style, {
+                  backgroundColor: 'hsl(200 100% 90%)',
+                  color: 'hsl(200 82% 15%)',
+                  borderRadius: '1rem',
+                  padding: '.5rem 1rem',
+                }))
+          </code></pre>
+        </div>
+      </slyd>
+
+      <slyd id="headings">
+        <div v-list>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </div>
+      </slyd>
+
+      <slyd id="paragraphs">
+        <div v-list>
+          <h3 class="brand_color-1">Regular <span serif ampersand>&</span> Leaded</h3>
+          <div h-list top>
+            <p text-left>Milk, qui, french press half and half turkish kopi-luwak cortado half and half café au lait extraction chicory. Id est, aftertaste cultivar french press chicory siphon.</p>
+            <p text-left lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
           </div>
-        </slyd>
+        </div>
+      </slyd>
 
-        <slyd id="natural-flow">
-          <div v-list>
-            <h2 class="brand_color-2">Natural</h2>
-            <h3>content enters and exits the stage</h3>
+      <slyd id="lead-paragraphs">
+        <div v-list>
+          <h3 serif bold uppercase class="brand_color-1">Justified</h3>
+          <p justify lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
+        </div>
+      </slyd>
+
+      <slyd id="numbered-lists">
+        <div v-list>
+          <ol>
+            <li>Plain</li>
+            <li>HTML</li>
+            <li>Lists</li>
+            <li>That can handle really long lengths of text and still look alright because otherwise why would I want it?</li>
+          </ol>
+        </div>
+      </slyd>
+
+      <slyd id="bulleted-lists">
+        <div v-list>
+          <ul>
+            <li>Normal</li>
+            <li>Fine</li>
+            <li>Bullets</li>
+          </ul>
+        </div>
+      </slyd>
+
+      <slyd id="links">
+        <div v-list>
+          <h3 serif class="text_color-1">Links</h3>
+          <br>
+          <div centered h-list>
+            <a href="#">lowercase link</a>
+            <a href="#">Super Long Link With Fancy Underlines</a>
           </div>
-        </slyd>
+        </div>
+      </slyd>
 
-        <slyd id="deep-links">
-          <div v-list>
-            <h2 class="brand_color-3">Deep Links</h2>
+      <slyd id="buttons">
+        <div v-list>
+          <h3 serif class="text_color-1">Buttons</h3>
+          <br>
+          <div centered h-list>
+            <button>Primary</button>
+            <button secondary>Secondary</button>
+            <button ghost>Ghost</button>
+            <button ghost secondary>Ghost Secondary</button>
+            <button link>Link Button</button>
           </div>
-        </slyd>
+        </div>
+      </slyd>
 
-        <slyd id="keyboard-support">
-          <div v-list>
-            <h2 class="text_color-1">touch <span ampersand>&</span> keyboard support</h2>
-          </div>
-        </slyd>
-
-        <slyd id="themeable">
-          <div v-list>
-            <h2 class="text_color-1">Themeable</h2>
-          </div>
-        </slyd>
-
-
-        <slyd id="batteries-included">
-          <div v-list>
-            <div text-left>
-              <small>comes with</small>
-              <h1>components</h1>
+      <slyd id="decorators">
+        <div v-list>
+          <h1 bold serif uppercase class="brand_color-3">Decorators</h1>
+          <div h-list center>
+            <div v-list>
+              <h3 serif class="text_color-1">serif</h3>
+              <h3 uppercase class="text_color-2">uppercase</h3>
+              <h3 capitalize>capitalize</h3>
+            </div>
+            <span ampersand style="font-size:7vmax;">&</span>
+            <div v-list>
+              <h3 bold class="brand_color-1">brand colors</h3>
+              <h3 italic class="brand_color-2">on</h3>
+              <h3 uppercase class="brand_color-3">anything</h3>
             </div>
           </div>
-        </slyd>
+        </div>
+      </slyd>
 
-        <slyd id="quotes">
-          <div v-list>
-            <blockquote>
-              <p>What's the object-oriented way to become wealthy?</p>
-              <p>Inheritance.</p>
-              <footer>Claudio</footer>
-            </blockquote>
+
+      <slyd id="embed-media">
+        <div v-list>
+          <div>
+            <h1>embed<br>images</h1>
           </div>
-        </slyd>
+        </div>
+      </slyd>
 
-        <slyd id="code-highlighting">
-          <div v-list>
-            <h3 serif class="text_color-1" style="margin-bottom:2rem;">Syntax Highlighting</h3>
-            <pre class="language-js line-numbers show-language"><code>
-              document.querySelectorAll('.🤓')
-                .forEach(({style}) => 
-                  Object.assign(style, {
-                    backgroundColor: 'hsl(200 100% 90%)',
-                    color: 'hsl(200 82% 15%)',
-                    borderRadius: '1rem',
-                    padding: '.5rem 1rem',
-                  }))
-            </code></pre>
-          </div>
-        </slyd>
+      <slyd id="inline-images">
+        <div h-list text-left>
+          <picture cover>
+            <img src="./images/aliens.png" alt="">
+          </picture>
+        </div>
+      </slyd>
 
-        <slyd id="headings">
-          <div v-list>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-          </div>
-        </slyd>
+      <slyd id="background-images" style="--image: url(./images/starwars.png);">
+        <div v-list>
+          <h3 class="text_color-1">Background Images</h3>
+          <br>
+          <button>Watch Preview</button>
+        </div>
+      </slyd>
 
-        <slyd id="paragraphs">
-          <div v-list>
-            <h3 class="brand_color-1">Regular <span serif ampersand>&</span> Leaded</h3>
-            <div h-list top>
-              <p text-left>Milk, qui, french press half and half turkish kopi-luwak cortado half and half café au lait extraction chicory. Id est, aftertaste cultivar french press chicory siphon.</p>
-              <p text-left lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
-            </div>
-          </div>
-        </slyd>
-
-        <slyd id="lead-paragraphs">
-          <div v-list>
-            <h3 serif bold uppercase class="brand_color-1">Justified</h3>
-            <p justify lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
-          </div>
-        </slyd>
-
-        <slyd id="numbered-lists">
-          <div v-list>
-            <ol>
-              <li>Plain</li>
-              <li>HTML</li>
-              <li>Lists</li>
-              <li>That can handle really long lengths of text and still look alright because otherwise why would I want it?</li>
-            </ol>
-          </div>
-        </slyd>
-
-        <slyd id="bulleted-lists">
-          <div v-list>
-            <ul>
-              <li>Normal</li>
-              <li>Fine</li>
-              <li>Bullets</li>
-            </ul>
-          </div>
-        </slyd>
-
-        <slyd id="links">
-          <div v-list>
-            <h3 serif class="text_color-1">Links</h3>
-            <br>
-            <div centered h-list>
-              <a href="#">lowercase link</a>
-              <a href="#">Super Long Link With Fancy Underlines</a>
-            </div>
-          </div>
-        </slyd>
-
-        <slyd id="buttons">
-          <div v-list>
-            <h3 serif class="text_color-1">Buttons</h3>
-            <br>
-            <div centered h-list>
-              <button>Primary</button>
-              <button secondary>Secondary</button>
-              <button ghost>Ghost</button>
-              <button ghost secondary>Ghost Secondary</button>
-              <button link>Link Button</button>
-            </div>
-          </div>
-        </slyd>
-
-        <slyd id="decorators">
-          <div v-list>
-            <h1 bold serif uppercase class="brand_color-3">Decorators</h1>
-            <div h-list center>
-              <div v-list>
-                <h3 serif class="text_color-1">serif</h3>
-                <h3 uppercase class="text_color-2">uppercase</h3>
-                <h3 capitalize>capitalize</h3>
-              </div>
-              <span ampersand style="font-size:7vmax;">&</span>
-              <div v-list>
-                <h3 bold class="brand_color-1">brand colors</h3>
-                <h3 italic class="brand_color-2">on</h3>
-                <h3 uppercase class="brand_color-3">anything</h3>
-              </div>
-            </div>
-          </div>
-        </slyd>
-
-
-        <slyd id="embed-media">
-          <div v-list>
-            <div>
-              <h1>embed<br>images</h1>
-            </div>
-          </div>
-        </slyd>
-
-        <slyd id="inline-images">
-          <div h-list text-left>
-            <picture cover>
-              <img src="./images/aliens.png" alt="">
-            </picture>
-          </div>
-        </slyd>
-
-        <slyd id="background-images" style="--image: url(./images/starwars.png);">
-          <div v-list>
-            <h3 class="text_color-1">Background Images</h3>
-            <br>
-            <button>Watch Preview</button>
-          </div>
-        </slyd>
-
-        <slyd id="control-overlay" style="--image: url(./images/starwars.png); --darkness: 80%;">
-          <div v-list>
-            <blockquote>
-              <p>What's the object-oriented way to become wealthy?</p>
-              <p>Inheritance.</p>
-              <footer>Claudio</footer>
-            </blockquote>
-          </div>
-        </slyd>
-
+      <slyd id="control-overlay" style="--image: url(./images/starwars.png); --darkness: 80%;">
+        <div v-list>
+          <blockquote>
+            <p>What's the object-oriented way to become wealthy?</p>
+            <p>Inheritance.</p>
+            <footer>Claudio</footer>
+          </blockquote>
+        </div>
+      </slyd>
 
     </slyds>
 

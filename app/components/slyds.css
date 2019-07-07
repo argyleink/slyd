@@ -4,14 +4,15 @@ slyds {
   overflow: scroll;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
-
-  display: grid;
-  grid-template-columns: repeat(4, 100vw);
-  grid-template-rows: repeat(4, 100vh);
-  
   scroll-snap-type: both mandatory;
 
+  display: grid;
+  grid-auto-columns: 100vw;
+  grid-auto-rows: 100vh;
+  grid-auto-flow: dense;
+
   & > * {
+    grid-column: var(--section, 1);
     scroll-snap-align: start;
     scroll-snap-stop: always;
     transform-style: preserve-3d;
