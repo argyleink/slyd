@@ -3,13 +3,13 @@ slyds {
   height: 100vh;
   overflow: scroll;
   overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 
   display: grid;
   grid-template-columns: repeat(4, 100vw);
   grid-template-rows: repeat(4, 100vh);
   
   scroll-snap-type: both mandatory;
-  /* scroll-snap-align: center; */
 
   & > * {
     scroll-snap-align: start;
