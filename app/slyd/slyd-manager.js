@@ -9,11 +9,14 @@ const state = {
 const setActive = slyd => {
   state.slyds.active = slyd.target
   state.slyds.active.setAttribute('active', true)
+  slyd.target.setAttribute('tabIndex', 1)
 }
 
 const removeActive = slyd => {
-  if (state.slyds.active)
+  if (state.slyds.active) {
     state.slyds.active.removeAttribute('active')
+    state.slyds.active.removeAttribute('tabIndex')
+  }
 }
 
 const setURL = hash =>
