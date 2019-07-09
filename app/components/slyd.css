@@ -19,12 +19,13 @@ slyd {
   background-position: center center;
   background-size: cover;
 
-  /* transition: transform 30s cubic-bezier(0.51, 0.01, 0.68, 0.99);
-
-  &[active="true"] {
-    transform: translateZ(2px);
-    transform-style: preserve-3d;
-  } */
+  &[slow-zoom] {
+    &[active="true"] {
+      transition: transform 20s cubic-bezier(0.51, 0.01, 0.68, 0.99);
+      transform: translateZ(2px);
+      transform-style: preserve-3d;
+    }  
+  }
 
   /* spacing management of children */
   & > [v-list] { padding: 0 1rem; }
