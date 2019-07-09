@@ -14,6 +14,10 @@ ul, ol {
     (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
       (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
   );
+
+  &[tight] {
+    margin: 0;
+  }
 }
 
 ul {
