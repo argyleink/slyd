@@ -13,6 +13,7 @@
 
 [highlight] {
   position: relative;
+  color: var(--text-color-1);
 
   &:before {
     content: " ";
