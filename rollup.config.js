@@ -8,7 +8,6 @@ export default {
   output: {
     file: 'app/bundle.js',
     format: 'es',
-    sourcemap: 'inline',
   },
   plugins: [
     resolve({
