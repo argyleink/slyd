@@ -1,5 +1,9 @@
 import { onSlydChanged } from './slyd-observer.js'
 
+document.querySelectorAll('slyd')
+  .forEach(slyd =>
+    slyd.setAttribute('aria-role', 'article'))
+
 const state = {
   slyds: {
     active: undefined,
