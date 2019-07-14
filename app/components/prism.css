@@ -32,6 +32,10 @@ code[class*="language-"], pre[class*="language-"] {
     color: var(--brand-color-3);
   }
 
+  &:matches(.attr-value) {
+    color: var(--text-color-1);
+  }
+
   &:matches(.property, .tag, .function, .comment) {
     font-style: italic;
   }
