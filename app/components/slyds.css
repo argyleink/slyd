@@ -16,7 +16,7 @@ slyds {
     transform-style: preserve-3d;
   }
 
-  &:first-of-type > slyd:first-of-type > * {
+  /* &:first-of-type > slyd:first-of-type > * {
     opacity: 0;
     transform: translateY(1vmax) scale(.99);
     animation: introduce-yourself 1.5s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
@@ -26,12 +26,12 @@ slyds {
     &:nth-child(3) { animation-delay: 150ms; }
     &:nth-child(2) { animation-delay: 200ms; }
     &:nth-child(1) { animation-delay: 250ms; }
-  }
+  } */
 }
 
 @keyframes introduce-yourself {
   to { 
     opacity: 1;
-    transform: translate3d(0,0,0) scale(1); 
+    transform: translateY(0) scale(1); 
   }
 }
