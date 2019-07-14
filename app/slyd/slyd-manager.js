@@ -2,7 +2,7 @@ import { onSlydChanged } from './slyd-observer.js'
 
 document.querySelectorAll('slyd')
   .forEach(slyd =>
-    slyd.setAttribute('aria-role', 'article'))
+    slyd.setAttribute('aria-role', 'article')) // authoring convenience
 
 const state = {
   slyds: {
@@ -10,10 +10,11 @@ const state = {
   }
 }
 
-const setActive = slyd => {
-  state.slyds.active = slyd.target
+const setActive = ({target:in_view_slide}) => {
+  state.slyds.active = in_view_slide
   state.slyds.active.setAttribute('active', true)
-  slyd.target.setAttribute('tabIndex', -1)
+  in_view_slide.setAttribute('tabIndex', -1)
+  setSrcs(in_view_slide)
 }
 
 const removeActive = slyd => {
@@ -21,7 +22,13 @@ const removeActive = slyd => {
     state.slyds.active.removeAttribute('active')
     state.slyds.active.removeAttribute('tabIndex')
   }
-}
+}  
+
+const setSrcs = slyd =>
+  slyd.querySelectorAll('[lazy-src]')
+    .forEach(lazysrc =>
+      lazysrc.setAttribute('src', 
+        lazysrc.getAttribute('lazy-src')))
 
 const setURL = hash =>
   window.location.hash = hash
