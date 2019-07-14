@@ -38,7 +38,8 @@ const setSrcs = slyd =>
 const playVideo = slyd =>
   Array.from(slyd.querySelectorAll('video'))
     .filter(video =>
-      !video.hasAttribute('lazy-src'))
+      video.hasAttribute('src') && 
+      video.paused)
     .forEach(video =>
       video.play())
 
