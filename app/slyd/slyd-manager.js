@@ -15,26 +15,43 @@ const setActive = ({target:in_view_slide}) => {
   state.slyds.active.setAttribute('active', true)
   in_view_slide.setAttribute('tabIndex', -1)
   setSrcs(in_view_slide)
+  playVideo(in_view_slide)
 }
 
-const removeActive = slyd => {
-  if (state.slyds.active) {
-    state.slyds.active.removeAttribute('active')
-    state.slyds.active.removeAttribute('tabIndex')
+const removeActive = () => {
+  const {active} = state.slyds
+
+  if (active) {
+    active.removeAttribute('active')
+    active.removeAttribute('tabIndex')
+    pauseVideo(active)
   }
 }  
 
 const setSrcs = slyd =>
   slyd.querySelectorAll('[lazy-src]')
-    .forEach(lazysrc =>
-      lazysrc.setAttribute('src', 
-        lazysrc.getAttribute('lazy-src')))
+    .forEach(lazysrc => {
+      lazysrc.setAttribute('src', lazysrc.getAttribute('lazy-src'))
+      lazysrc.removeAttribute('lazy-src')
+    })
+
+const playVideo = slyd =>
+  Array.from(slyd.querySelectorAll('video'))
+    .filter(video =>
+      !video.hasAttribute('lazy-src'))
+    .forEach(video =>
+      video.play())
+
+const pauseVideo = slyd =>
+  slyd.querySelectorAll('video')
+    .forEach(video =>
+      video.pause())
 
 const setURL = hash =>
   window.location.hash = hash
 
 onSlydChanged(slyd => {
-  removeActive(slyd)
+  removeActive()
   setActive(slyd)
   
   setURL(state.slyds.active.id)
