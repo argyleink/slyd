@@ -18,8 +18,7 @@ if (window.hasOwnProperty('IntersectionObserver')) {
     threshold: 1,
   })
 
-  Array.from(document.querySelectorAll('slyd'))
-    .filter((slyd, i) => i !== 0)
+  document.querySelectorAll('slyd')
     .forEach(slyd => 
       slyd_observer.observe(slyd))
 }
