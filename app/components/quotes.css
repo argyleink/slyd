@@ -16,7 +16,7 @@ blockquote {
   &:before {
     content: "“";
     position: absolute;
-    top: -10vmax;
+    top: -12vmax;
     left: 0;
 
     color: var(--text-color-3);

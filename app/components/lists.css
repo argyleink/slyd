@@ -23,7 +23,7 @@ ul, ol {
 ul {
   & > li:before {
     position: relative;
-    top: -.15em;
+    top: -0.075em;
     margin-right: 1rem;
   }
 }
@@ -37,6 +37,8 @@ ol {
 
     &:before {
       content: "0" counter(slyd-list-counter);
+      top: 0.125em;
+      position: relative;
     }
   }
 }

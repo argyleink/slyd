@@ -40,7 +40,7 @@ em {
 a {
   display: inline-block;
   color: var(--brand-color-2);
-  font-size: 1.5rem;
+  font-size: 1em;
 }
 
 p {
