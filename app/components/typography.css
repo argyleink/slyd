@@ -45,7 +45,6 @@ a {
 
 p {
   max-width: var(--max-linelength);
-  font-size: 1.75rem;
   font-weight: 300;
 
   --fluid-type-min-size: 1.25;
@@ -74,7 +73,7 @@ small {
   display: inline-block;
   color: var(--text-color-2);
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   letter-spacing: 1px;
 }
 
