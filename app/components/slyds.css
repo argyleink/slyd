@@ -15,4 +15,23 @@ slyds {
     scroll-snap-stop: always;
     transform-style: preserve-3d;
   }
+
+  &:first-of-type > slyd:first-of-type > * {
+    opacity: 0;
+    transform: translateY(5px) scale(.99);
+    animation: introduce-yourself 1.5s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
+
+    &:nth-child(5) { animation-delay: .1s; }
+    &:nth-child(4) { animation-delay: .2s; }
+    &:nth-child(3) { animation-delay: .3s; }
+    &:nth-child(2) { animation-delay: .4s; }
+    &:nth-child(1) { animation-delay: .5s; }
+  }
+}
+
+@keyframes introduce-yourself {
+  to { 
+    opacity: 1;
+    transform: translate3d(0,0,0) scale(1); 
+  }
 }
