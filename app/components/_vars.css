@@ -18,6 +18,11 @@
   --brand-color-2: hsl(calc(var(--hue) * 1.5) 65% 75%);
   --brand-color-3: hsl(calc(var(--hue) * 1.2) 75% 80%);
 
+  --spacing-1: 1.5vmax;
+  --spacing-2: 3vmax;
+  --spacing-3: 5vmax;
+  --spacing-4: 10vmax;
+
   /* https://easings.net */
   --easing: ease-out-expo;
 

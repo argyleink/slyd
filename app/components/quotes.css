@@ -1,4 +1,5 @@
 blockquote {
+  text-align: center;
   position: relative;
   margin: 0 10%;
   font-family: var(--serif);
