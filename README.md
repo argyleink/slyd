@@ -11,18 +11,23 @@ OR
 Start making `<slyd>`'s!
 
 ```html
-<main>
-  <slyds>
+<slyds>
+  <slyd>
+    <h1>Slide 1</h1>
+    <h2>subtitle</h2>
+  </slyd>
 
-    <slyd centered v-list>
-      <h1 uppercase>slyd</h1>
-      <h2>a <span highlight>minimalist's</span> slide deck</h2>
+  <slyd-group>
+
+    <slyd>
+      <h1 uppercase>Slide 2</h1>
+      <h2>is in a <span highlight>vertical</span> slide list</h2>
     </slyd>
     
     ...
     
-  </slyds>
+  </slyd-group>
   
-  <slyds>...</slyds>
-<main>
+  <slyd-group>...</slyd-group>
+<slyds>
 ```

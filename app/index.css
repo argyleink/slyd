@@ -6,9 +6,9 @@
 @import './components/layouts.css';
 
 @import './components/slyds.css';
+@import './components/slyd-group.css';
 @import './components/slyd.css';
 @import './components/depth.css';
-@import './components/main.css';
 
 @import './components/button.css';
 @import './components/lists.css';

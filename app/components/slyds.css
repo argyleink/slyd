@@ -1,37 +1,24 @@
 slyds {
+  background: var(--surface-1);
+  color: var(--text-color-1);
+  font-family: var(--sans-serif);
+
+  /* snapping grid layout */
   display: grid;
-  grid-auto-flow: row;
-  grid-auto-rows: 100vh;
-  grid-template-columns: 100vw;
-  
-  overflow-y: scroll;
-  overscroll-behavior-y: contain;
+  grid-auto-flow: column;
+  grid-auto-columns: 100vw;
+  grid-template-rows: 100vh;
+
+  overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-color: light;
+  -webkit-scrollbar-color: light;
   
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory;
 
   & > * {
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    transform-style: preserve-3d;
-  }
-
-  /* &:first-of-type > slyd:first-of-type > * {
-    opacity: 0;
-    transform: translateY(1vmax) scale(.99);
-    animation: introduce-yourself 1.5s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
-
-    &:nth-child(5) { animation-delay: 50ms; }
-    &:nth-child(4) { animation-delay: 100ms; }
-    &:nth-child(3) { animation-delay: 150ms; }
-    &:nth-child(2) { animation-delay: 200ms; }
-    &:nth-child(1) { animation-delay: 250ms; }
-  } */
-}
-
-@keyframes introduce-yourself {
-  to { 
-    opacity: 1;
-    transform: translateY(0) scale(1); 
   }
 }

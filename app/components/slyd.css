@@ -1,7 +1,8 @@
 slyd {
   height: 100vh;
   display: grid;
-  place-items: center;
+  place-content: center;
+  gap: var(--spacing-2);
   grid-auto-flow: row;
   text-align: center;
   overflow: hidden;
@@ -45,8 +46,8 @@ slyd {
   }
 
   /* spacing management of children */
-  & > [v-list] { padding: 0 1rem; }
-  & > [h-list] { padding: 0 10vw; }
+  & > [stack] { padding: 0 1rem; }
+  & > [shelf] { padding: 0 10vw; }
   & > picture:only-child { padding: 0 10vw; }
   & video { width: 100%; height: 100%; object-fit: contain; }
 }
