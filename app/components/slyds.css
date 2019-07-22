@@ -1,4 +1,7 @@
 slyds {
+  width: 100vw;
+  height: 100vh;
+
   background: var(--surface-1);
   color: var(--text-color-1);
   font-family: var(--sans-serif);
@@ -8,17 +11,27 @@ slyds {
   grid-auto-flow: column;
   grid-auto-columns: 100vw;
   grid-template-rows: 100vh;
-
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-x: contain;
-  scrollbar-color: light;
-  -webkit-scrollbar-color: light;
   
   scroll-snap-type: x mandatory;
 
   & > * {
     scroll-snap-align: center;
     scroll-snap-stop: always;
+  }
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  /* scrollbar-color: light;
+  -webkit-scrollbar-color: light; */
+
+  &::-webkit-scrollbar {
+    height: 1px;
+    background-color: var(--surface-1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--brand-color-1);
   }
 }

@@ -1,29 +1,8 @@
 slyd {
+  width: 100vw;
   height: 100vh;
-  display: grid;
-  place-content: center;
-  gap: var(--spacing-1);
-  grid-auto-flow: row;
-  text-align: center;
   overflow: hidden;
   position: relative;
-
-  line-height: 1.5;
-  font-weight: 200;
-  --fluid-type-min-size: 1.25;
-  --fluid-type-max-size: 2.5;
-  --fluid-type-min-screen: 20;
-  --fluid-type-max-screen: 88;
-
-  font-size: calc(
-    (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
-      (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
-  );
-
-  @media (orientation: landscape) {
-    --fluid-type-min-size: 1;
-    --fluid-type-max-size: 2.25;
-  }
 
   &:focus:not(:focus-visible) { 
     outline: none;

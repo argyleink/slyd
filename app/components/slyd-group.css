@@ -4,17 +4,27 @@ slyd-group {
   grid-auto-rows: 100vh;
   grid-template-columns: 100vw;
   
-  overflow-y: scroll;
-  overscroll-behavior-y: contain;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-color: light;
-  -webkit-scrollbar-color: light;
-  
   scroll-snap-type: y mandatory;
 
   & > * {
     scroll-snap-align: center;
     scroll-snap-stop: always;
     transform-style: preserve-3d;
+  }
+  
+  overflow-y: scroll;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+  /* scrollbar-color: light;
+  -webkit-scrollbar-color: light; */
+
+  &::-webkit-scrollbar {
+    width: 1px;
+    background-color: var(--surface-1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--brand-color-1);
   }
 }
