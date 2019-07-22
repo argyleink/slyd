@@ -37,7 +37,7 @@ ol {
 
     &:before {
       content: "0" counter(slyd-list-counter);
-      top: 0.125em;
+      top: 0.1em;
       position: relative;
     }
   }
