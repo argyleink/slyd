@@ -1,10 +1,10 @@
-.text_color-1 { color: var(--text-color-1); }
-.text_color-2 { color: var(--text-color-2); }
-.text_color-3 { color: var(--text-color-3); }
+[color="text-1"] { color: var(--text-color-1); }
+[color="text-2"] { color: var(--text-color-2); }
+[color="text-3"] { color: var(--text-color-3); }
 
-.brand_color-1 { color: var(--brand-color-1); }
-.brand_color-2 { color: var(--brand-color-2); }
-.brand_color-3 { color: var(--brand-color-3); }
+[color="brand-1"] { color: var(--brand-color-1); }
+[color="brand-2"] { color: var(--brand-color-2); }
+[color="brand-3"] { color: var(--brand-color-3); }
 
-.surface-1 { color: var(--surface-1); }
-.surface-2 { color: var(--surface-2); }
+[bg="surface-1"] { background-color: var(--surface-1); }
+[bg="surface-2"] { background-color: var(--surface-2); }
