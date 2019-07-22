@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  background: var(--surface-1);
-  color: var(--text-color-1);
-  font-family: var(--sans-serif);
   overflow: hidden;
+}
+
+::selection {
+  background: var(--brand-color-1);
+  color: white;
 }
