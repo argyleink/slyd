@@ -1,5 +1,4 @@
 slyds { perspective: 30px; }
-[no-depth] { transform: translateZ(0); }
 
 pre { transform: translateZ(10px); }
 h1 { transform: translateZ(8px); }
@@ -11,3 +10,5 @@ h4 { transform: translateZ(3px); }
 a { transform: translateZ(2px); }
 h5, h6 { transform: translateZ(2px); }
 small { transform: translateZ(1px); }
+
+[no-depth] { transform: translateZ(0); }
