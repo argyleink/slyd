@@ -3,6 +3,7 @@ slyd {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  text-align: center;
 
   &:focus:not(:focus-visible) { 
     outline: none;

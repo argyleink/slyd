@@ -110,6 +110,10 @@ h1, h2, h3, h4, h5, h6 {
     (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
       (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
   );
+
+  @media (orientation: portrait) {
+    margin: 0 7.5vmax;
+  }
 }
 
 /* https://andy-bell.design/wrote/custom-property-controlled-fluid-type-sizing/ */
