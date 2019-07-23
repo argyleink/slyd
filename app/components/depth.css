@@ -1,14 +1,24 @@
 slyds { perspective: 30px; }
 
+[depth-7]
 pre { transform: translateZ(10px); }
+
+[depth-6],
 h1 { transform: translateZ(8px); }
+
+[depth-5],
 h2, blockquote, [ampersand] { transform: translateZ(6px); }
-h3 { transform: translateZ(4px); }
-picture { transform: translateZ(4px); }
-button { transform: translateZ(3px); } 
-h4 { transform: translateZ(3px); }
-a { transform: translateZ(2px); }
-h5, h6 { transform: translateZ(2px); }
+
+[depth-4],
+h3, picture { transform: translateZ(4px); }
+
+[depth-3],
+button,h4 { transform: translateZ(3px); } 
+
+[depth-2],
+a,h5,h6 { transform: translateZ(2px); }
+
+[depth-1],
 small { transform: translateZ(1px); }
 
 [no-depth] { transform: translateZ(0); }
