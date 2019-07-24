@@ -1,9 +1,9 @@
 const state = {
-  callbacks: [],
+  callbacks: new Set(),
 }
 
 export const onSlydChanged = cb =>
-  state.callbacks.push(cb)
+  state.callbacks.add(cb)
 
 if (window.hasOwnProperty('IntersectionObserver')) {
   const slyd_observer = new IntersectionObserver(slides => {
