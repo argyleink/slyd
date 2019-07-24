@@ -13,7 +13,7 @@ if (window.hasOwnProperty('IntersectionObserver')) {
       state.callbacks.forEach(cb =>
         cb(slyd))
   }, {
-    root: document.querySelector('main'),
+    root: document.querySelector('slyds'),
     rootMargin: '0px',
     threshold: 1,
   })
