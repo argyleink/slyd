@@ -63,6 +63,7 @@ slyd {
 }
 
 p {
+  margin: 0;
   max-width: var(--max-linelength);
   font-weight: 300;
 
@@ -85,6 +86,10 @@ p {
     --max-linelength: 40vw;
     --fluid-type-min-size: 1;
     --fluid-type-max-size: 2.25;
+  }
+
+  @media (orientation: portrait) {
+    margin: 0 var(--spacing-3);
   }
 }
 
