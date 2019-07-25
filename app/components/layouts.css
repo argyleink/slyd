@@ -10,7 +10,7 @@
   grid-auto-flow: column;
   justify-items: center;
   align-content: center;
-  gap: var(--spacing-1);
+  gap: var(--spacing-3);
 
   @media (orientation: portrait) {
     grid-auto-flow: row;
