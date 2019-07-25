@@ -26,13 +26,14 @@
       <slyd-group>
 
         <slyd id="two-way">
-          <h2 color="brand-1">2 Way</h2>
+          <h2>2 Way</h2>
           <h3>bi-directional CSS parallax</h3>
+          <p lead>Slide up & down</p>
         </slyd>
 
         <slyd id="natural-flow">
           <h2 color="brand-2">Natural</h2>
-          <h3>content enters and exits the stage</h3>
+          <h3>content naturally enters and exits the stage</h3>
         </slyd>
 
         <slyd id="deep-links">
@@ -41,20 +42,32 @@
         </slyd>
 
         <slyd id="keyboard-support">
-          <h2 color="text-1">touch <em>&</em> keyboard support</h2>
+          <h2>touch <em>&</em> keyboard support</h2>
         </slyd>
 
         <slyd id="themeable">
-          <h2 color="text-1">Themeable</h2>
+          <h2>Themeable</h2>
           <h3>via CSS custom properties</h3>
         </slyd>
 
       </slyd-group>
 
+      <slyd id="minimal-markup">
+        <h2>Minimal Markup</h2>
+        <pre class="language-html line-numbers show-language"><code>
+          &#60;slyd&#62;
+            &#60;h2&#62;Minimal Markup&#60;/h2&#62;
+            &#60;pre class="language-html line-numbers show-language"&#62;&#60;code&#62;
+              ...
+            &#60;/code&#62;&#60;/pre&#62;
+          &#60;/slyd&#62;
+        </code></pre>
+      </slyd>
+
       <slyd-group>
 
         <slyd id="batteries-included">
-          <small>comes with</small>
+          <h5>comes with</h5>
           <h1>components</h1>
         </slyd>
 
@@ -67,7 +80,7 @@
         </slyd>
 
         <slyd id="code-highlighting">
-          <h3 serif color="text-1" style="margin-bottom:2rem;">Syntax Highlighting</h3>
+          <h3 serif style="margin-bottom:2rem;">Syntax Highlighting</h3>
           <pre class="language-js line-numbers show-language"><code>
             document.querySelectorAll('.🤓')
               .forEach(({style}) => 
@@ -88,17 +101,15 @@
         </slyd>
 
         <slyd id="paragraphs">
-          <div stack>
-            <h3 color="brand-1">Regular <em serif>&</em> Leaded</h3>
-            <div shelf>
-              <p text-left>Milk, qui, french press half and half turkish kopi-luwak cortado half and half café au lait extraction chicory. Id est, aftertaste cultivar french press chicory siphon.</p>
-              <p text-left lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
-            </div>
+          <h3 color="brand-1">Regular <em serif>&</em> Leaded</h3>
+          <div shelf>
+            <p text-left>Milk, qui, french press half and half turkish kopi-luwak cortado half and half café au lait extraction chicory. Id est, aftertaste cultivar french press chicory siphon.</p>
+            <p text-left lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
           </div>
         </slyd>
 
         <slyd id="lead-paragraphs">
-          <h3 serif bold uppercase color="brand-1">Justified</h3>
+          <h3 serif bold uppercase color="brand-2">Justified</h3>
           <p justify lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
         </slyd>
 
@@ -120,8 +131,7 @@
         </slyd>
 
         <slyd id="links">
-          <h3 serif color="text-1">Links</h3>
-          <br>
+          <h3 serif push-bottom="1">Links</h3>
           <div shelf>
             <a href="#">lowercase link</a>
             <a href="#">Super Long Link With Fancy Underlines</a>
@@ -129,8 +139,7 @@
         </slyd>
 
         <slyd id="buttons">
-          <h3 serif color="text-1">Buttons</h3>
-          <br>
+          <h3 serif push-bottom="1">Buttons</h3>
           <div shelf>
             <button>Primary</button>
             <button secondary>Secondary</button>
@@ -172,18 +181,16 @@
         </slyd>
 
         <slyd id="background-images" style="--image: url(./images/starwars.png);">
-          <h3 color="text-1" push-bottom="1">Background Images</h3>
+          <h3 push-bottom="1">Background Images</h3>
           <button>Watch Preview</button>
         </slyd>
 
         <slyd id="control-overlay" style="--image: url(./images/starwars.png); --darkness: 80%;">
-          <div stack>
-            <blockquote>
-              <p>What's the object-oriented way to become wealthy?</p>
-              <p>Inheritance.</p>
-              <footer>Claudio</footer>
-            </blockquote>
-          </div>
+          <blockquote>
+            <p>What's the object-oriented way to become wealthy?</p>
+            <p>Inheritance.</p>
+            <footer>Claudio</footer>
+          </blockquote>
         </slyd>
 
         <slyd id="inline-video">
@@ -196,7 +203,7 @@
 
         <slyd id="open-source">
           <h1>open source</h1>
-          <a href="https://github.com/argyleink/slyd">Github L</a>
+          <a href="https://github.com/argyleink/slyd">View on GitHub</a>
         </slyd>
 
       </slyd-group>

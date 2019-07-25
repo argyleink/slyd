@@ -25,6 +25,12 @@ slyd {
     }  
   }
 
+  & > h1:first-child,
+  & > h2:first-child,
+  & > h3:first-child {
+    color: var(--text-color-1);
+  }
+
   & > picture:only-child { padding: 0 10vw; }
   & video { width: 100%; height: 100%; object-fit: contain; }
 }
