@@ -2,7 +2,7 @@ ul, ol {
   display: grid;
   gap: .5rem;
   padding: 0;
-  margin: 0;
+  margin: 0 10vw;
   text-align: left;
 
   --fluid-type-min-size: 1.25;
@@ -14,12 +14,17 @@ ul, ol {
     (var(--fluid-type-min-size) * 1rem) + (var(--fluid-type-max-size) - var(--fluid-type-min-size)) * (100vw - (var(--fluid-type-min-screen) * 1rem)) /
       (var(--fluid-type-max-screen) - var(--fluid-type-min-screen))
   );
+
+  &[tight] {
+    margin: 0;
+  }
 }
 
 ul {
   & > li:before {
     position: relative;
-    top: -.15em;
+    top: -0.075em;
+    margin-right: 1rem;
   }
 }
 
@@ -32,6 +37,8 @@ ol {
 
     &:before {
       content: "0" counter(slyd-list-counter);
+      top: 0.1em;
+      position: relative;
     }
   }
 }
@@ -40,6 +47,7 @@ li {
   display: inline-flex;
   align-items: flex-start;
   font-weight: 300;
+  max-width: var(--max-linelength);
 
   &:before {
     content: "»";

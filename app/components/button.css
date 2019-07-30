@@ -1,7 +1,7 @@
-.button {
+button {
   --button-theme: var(--hue);
 
-  --bg: hsl(var(--button-theme) 50% 75%);
+  --bg: hsla(var(--button-theme), 50%, 75%, 80%);
   --bg-hover: hsl(var(--button-theme) 50% 80%);
   --text: hsl(var(--button-theme) 60% 15%);
 
@@ -19,7 +19,9 @@
   color: var(--text);
   border: 2px solid transparent;
   line-height: 1.4;
+  white-space: nowrap;
 
+  backdrop-filter: blur(var(--bg-blur));
   transition: background-color .3s ease;
   
   --fluid-type-min-size: .75;
@@ -44,24 +46,22 @@
     outline: none;
   }
 
-  &.button-secondary {
+  &[secondary] {
     --button-theme: calc(var(--hue) * 1.5);
-    /* --bg: var(--brand-color-2);
-    --bg-hover: hsl(calc(var(--hue) * 1.5) 85% 60%);
-    --text: hsl(calc(var(--hue) * 1.5) 60% 25%); */
   }
 
-  &.button-ghost {
-    --bg: transparent;
+  &[ghost] {
+    background: none;
     --bg-hover: hsla(var(--hue), 80%, 40%, 10%);
     --text: var(--brand-color-1);
-    border: 2px solid var(--brand-color-1);
+    border: 2px solid var(--bg);
+    color: var(--bg);
   }
 
-  &.button-link {
-    --bg: transparent;
+  &[link] {
+    background: none;
     --bg-hover: transparent;
-    --text: var(--brand-color-2);
+    --text: var(--brand-color-1);
 
     &:hover {
       text-decoration: underline;

@@ -8,7 +8,6 @@ export default {
   output: {
     file: 'app/slyd.js',
     format: 'es',
-    sourcemap: 'inline',
   },
   plugins: [
     resolve({

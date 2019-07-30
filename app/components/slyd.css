@@ -1,13 +1,15 @@
 slyd {
+  width: 100vw;
   height: 100vh;
-  display: grid;
-  place-items: center;
-  grid-auto-flow: row;
-  text-align: center;
   overflow: hidden;
   position: relative;
+  text-align: center;
 
-  --darkness: 0;
+  &:focus:not(:focus-visible) { 
+    outline: none;
+  }
+
+  --darkness: 50%;
 
   background-image: 
     radial-gradient(circle, hsla(0,0%,0%,var(--darkness)) 0%, hsla(0,0%,0%,var(--darkness)) 100%),
@@ -15,15 +17,20 @@ slyd {
   background-position: center center;
   background-size: cover;
 
-  /* transition: transform 30s cubic-bezier(0.51, 0.01, 0.68, 0.99);
+  &[slow-zoom] {
+    &[slyd-active="true"] {
+      transition: transform 20s cubic-bezier(0.51, 0.01, 0.68, 0.99);
+      transform: translateZ(2px);
+      transform-style: preserve-3d;
+    }  
+  }
 
-  &[active="true"] {
-    transform: translateZ(2px);
-    transform-style: preserve-3d;
-  } */
+  & > h1:first-child,
+  & > h2:first-child,
+  & > h3:first-child {
+    color: var(--text-color-1);
+  }
 
-  /* spacing management of children */
-  & > [v-list] { padding: 0 1rem; }
-  & > [h-list] { padding: 0 10%; }
-  & picture { padding: 0 10%; }
+  & > picture:only-child { padding: 0 10vw; }
+  & video { width: 100%; height: 100%; object-fit: contain; }
 }

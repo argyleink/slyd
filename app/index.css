@@ -2,10 +2,11 @@
 
 @import './components/body.css';
 @import './components/typography.css';
-
+@import './components/colors.css';
 @import './components/layouts.css';
-@import './components/main.css';
+
 @import './components/slyds.css';
+@import './components/slyd-group.css';
 @import './components/slyd.css';
 @import './components/depth.css';
 

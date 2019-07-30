@@ -1,12 +1,24 @@
-[v-list] {
+[stack], slyd {
   display: grid;
-  gap: 1rem;
+  justify-items: center;
+  align-content: center;
+  gap: var(--spacing-1);
 }
 
-[h-list] {
+[shelf] {
   display: grid;
-  gap: 1rem;
   grid-auto-flow: column;
-  align-items: center;
-  justify-content: flex-start;
+  justify-items: center;
+  align-content: center;
+  gap: var(--spacing-3);
+
+  @media (orientation: portrait) {
+    grid-auto-flow: row;
+  }
+}
+
+[split] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
 }

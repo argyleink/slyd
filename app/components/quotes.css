@@ -1,4 +1,5 @@
 blockquote {
+  text-align: center;
   position: relative;
   margin: 0 10%;
   font-family: var(--serif);
@@ -14,14 +15,13 @@ blockquote {
   );
 
   &:before {
-    content: open-quote;
+    content: "“";
     position: absolute;
-    top: -10vmax;
+    top: -12vmax;
     left: 0;
 
     color: var(--text-color-3);
     font-size: 20vmax;
-    margin-right: .5rem;
   }
 
   & > p {

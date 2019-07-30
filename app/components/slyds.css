@@ -1,18 +1,37 @@
 slyds {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--surface-1);
+  color: var(--text-color-1);
+  font-family: var(--sans-serif);
+
+  /* snapping grid layout */
   display: grid;
-  grid-auto-flow: row;
-  grid-auto-rows: 100vh;
-  grid-template-columns: 100vw;
+  grid-auto-flow: column;
+  grid-auto-columns: 100vw;
+  grid-template-rows: 100vh;
   
-  overflow-y: scroll;
-  overscroll-behavior-y: contain;
-  -webkit-overflow-scrolling: touch;
-  
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory;
 
   & > * {
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    transform-style: preserve-3d;
+  }
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  /* scrollbar-color: light;
+  -webkit-scrollbar-color: light; */
+
+  &::-webkit-scrollbar {
+    height: 1px;
+    background-color: var(--surface-1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--brand-color-1);
   }
 }

@@ -16,147 +16,202 @@
     <link rel="stylesheet" href="slyd.css">
   </head>
   <body>
-    <main>
+    <slyds>
 
-      <slyds>
+      <slyd>
+        <h1 uppercase>slyd</h1>
+        <h2>a <span highlight>minimalist's</span> slide deck</h2>
+      </slyd>
 
-        <slyd>
-          <div v-list>
-            <h1>slyd</h1>
-            <h2>a minimalist's slide deck</h2>
-          </div>
-        </slyd>
+      <slyd-group>
 
         <slyd id="two-way">
-          <div v-list>
-            <h3>bi-directional CSS parallax</h3>
-          </div>
+          <h2>2 Way</h2>
+          <h3>bi-directional CSS parallax</h3>
+          <p lead>Slide up & down</p>
         </slyd>
 
-      </slyds>
+        <slyd id="natural-flow">
+          <h2 color="brand-2">Natural</h2>
+          <h3>content naturally enters and exits the stage</h3>
+        </slyd>
 
-      <slyds>
+        <slyd id="deep-links">
+          <h2 color="brand-3">Deep Links</h2>
+          <h3>(share a link directly to a slide)</h3>
+        </slyd>
+
+        <slyd id="keyboard-support">
+          <h2>touch <em>&</em> keyboard support</h2>
+        </slyd>
+
+        <slyd id="themeable">
+          <h2>Themeable</h2>
+          <h3>via CSS custom properties</h3>
+        </slyd>
+
+      </slyd-group>
+
+      <slyd id="minimal-markup">
+        <h2>Minimal Markup</h2>
+        <pre class="language-html line-numbers show-language"><code>
+          &#60;slyd&#62;
+            &#60;h2&#62;Minimal Markup&#60;/h2&#62;
+            &#60;pre class="language-html line-numbers show-language"&#62;&#60;code&#62;
+              ...
+            &#60;/code&#62;&#60;/pre&#62;
+          &#60;/slyd&#62;
+        </code></pre>
+      </slyd>
+
+      <slyd-group>
 
         <slyd id="batteries-included">
-          <div v-list>
-            <div text-left>
-              <small>comes with</small>
-              <h1>components</h1>
-            </div>
-          </div>
+          <h5>comes with</h5>
+          <h1>components</h1>
         </slyd>
 
-        <slyd id="numbered-lists">
-          <div v-list>
-            <ol>
-              <li>Quick</li>
-              <li>HTML</li>
-              <li>Customizable</li>
-            </ol>
-          </div>
-        </slyd>
-
-        <slyd id="bulleted-lists">
-          <div v-list>
-            <ul>
-              <li>Quick</li>
-              <li>HTML</li>
-              <li>Customizable</li>
-            </ul>
-          </div>
+        <slyd id="quotes">
+          <blockquote>
+            <p>What's the object-oriented way to become wealthy?</p>
+            <p>Inheritance.</p>
+            <footer>Claudio</footer>
+          </blockquote>
         </slyd>
 
         <slyd id="code-highlighting">
-          <div v-list>
-            <h3>Syntax Highlighting</h3>
-            <br>
-            <pre class="language-js line-numbers show-language"><code>
-              document.querySelectorAll('.🤓')
-                .forEach(({style}) => 
-                  Object.assign(style, {
-                    backgroundColor: 'hsl(200 100% 90%)',
-                    color: 'hsl(200 82% 15%)',
-                    borderRadius: '1rem',
-                    padding: '.5rem 1rem',
-                  }))
-            </code></pre>
+          <h3 serif style="margin-bottom:2rem;">Syntax Highlighting</h3>
+          <pre class="language-js line-numbers show-language"><code>
+            document.querySelectorAll('.🤓')
+              .forEach(({style}) => 
+                Object.assign(style, {
+                  backgroundColor: 'hsl(200 100% 90%)',
+                  color: 'hsl(200 82% 15%)',
+                }))
+          </code></pre>
+        </slyd>
+
+        <slyd id="headings">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </slyd>
+
+        <slyd id="paragraphs">
+          <h3 color="brand-1">Regular <em serif>&</em> Leaded</h3>
+          <div shelf>
+            <p text-left>Milk, qui, french press half and half turkish kopi-luwak cortado half and half café au lait extraction chicory. Id est, aftertaste cultivar french press chicory siphon.</p>
+            <p text-left lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
           </div>
         </slyd>
 
+        <slyd id="lead-paragraphs">
+          <h3 serif bold uppercase color="brand-2">Justified</h3>
+          <p justify lead>Climb a tree, wait for a fireman jump to fireman then scratch his face leave fur on owners clothes stare at imaginary bug i'm bored inside, let me out i'm lonely.</p>
+        </slyd>
+
+        <slyd id="numbered-lists">
+          <ol>
+            <li>Plain</li>
+            <li>HTML</li>
+            <li>Lists</li>
+            <li>That can handle really long lengths of text and still look alright because otherwise why would I want it?</li>
+          </ol>
+        </slyd>
+
+        <slyd id="bulleted-lists">
+          <ul>
+            <li>Normal</li>
+            <li>Fine</li>
+            <li>Bullets</li>
+          </ul>
+        </slyd>
+
         <slyd id="links">
-          <div v-list>
-            <h3>Links</h3>
-            <br>
+          <h3 serif push-bottom="1">Links</h3>
+          <div shelf>
             <a href="#">lowercase link</a>
             <a href="#">Super Long Link With Fancy Underlines</a>
           </div>
         </slyd>
 
         <slyd id="buttons">
-          <div v-list>
-            <h3>Buttons</h3>
-            <br>
-            <div h-list>
-              <button class="button">Primary</button>
-              <button class="button button-secondary">Secondary</button>
-              <button class="button button-ghost">Ghost</button>
-              <button class="button button-link">Link</button>
+          <h3 serif push-bottom="1">Buttons</h3>
+          <div shelf>
+            <button>Primary</button>
+            <button secondary>Secondary</button>
+            <button ghost>Ghost</button>
+            <button ghost secondary>Ghost Secondary</button>
+            <button link>Link Button</button>
+          </div>
+        </slyd>
+
+        <slyd id="decorators">
+          <h1 bold serif uppercase color="brand-3">Decorators</h1>
+          <div shelf>
+            <div stack>
+              <h3 serif color="text-1">serif</h3>
+              <h3 uppercase color="text-2">uppercase</h3>
+              <h3 capitalize>capitalize</h3>
+            </div>
+            <em>&</em>
+            <div stack>
+              <h3 bold color="brand-1">brand colors</h3>
+              <h3 italic color="brand-2">on</h3>
+              <h3 uppercase color="brand-3">anything</h3>
             </div>
           </div>
         </slyd>
 
-        <slyd id="quotes">
-          <div v-list>
-            <blockquote>
-              <p>We got quotes</p>
-              <p>I won't have to yank out a bunch of guts to get a task done</p>
-              <footer>Adrock</footer>
-            </blockquote>
-          </div>
-        </slyd>
+      </slyd-group>
 
-      </slyds>
-
-      <slyds>
+      <slyd-group>
 
         <slyd id="embed-media">
-          <div v-list>
-            <div text-left>
-              <small>performantly</small>
-              <h1>embed images</h1>
-            </div>
-          </div>
-        </slyd>
-
-        <slyd id="background-images" style="--image: url(./images/starwars.png); --darkness: 50%;">
-          <div v-list>
-            <h3>Background Images</h3>
-            <br>
-            <button class="button">Watch Preview</button>
-          </div>
-        </slyd>
-
-        <slyd id="control-overlay" style="--image: url(./images/starwars.png); --darkness: 90%;">
-          <div v-list>
-            <h3>Control Darkness</h3>
-            <br>
-            <button class="button"><code>var(--darkness)</code></button>
-          </div>
+          <h1>embed media</h1>
         </slyd>
 
         <slyd id="inline-images">
-          <div h-list text-left>
-            <h3>Foreground Images</h3>
-            <picture cover>
-              <img src="./images/aliens.png" alt="">
-            </picture>
-          </div>
+          <picture cover>
+            <img loading="lazy" src="./images/aliens.png">
+          </picture>
         </slyd>
 
-      </slyds>
+        <slyd id="background-images" style="--image: url(./images/starwars.png);">
+          <h3 push-bottom="1">Background Images</h3>
+          <button>Watch Preview</button>
+        </slyd>
 
-    </main>
+        <slyd id="control-overlay" style="--image: url(./images/starwars.png); --darkness: 80%;">
+          <blockquote>
+            <p>What's the object-oriented way to become wealthy?</p>
+            <p>Inheritance.</p>
+            <footer>Claudio</footer>
+          </blockquote>
+        </slyd>
 
-    <script src="slyd.js" type="module" async></script>
+        <slyd id="inline-video">
+          <video loop autoplay lazy-src="https://storage.googleapis.com/web-dev-assets/portals_vp9.webm"/>
+        </slyd>
+
+      </slyd-group>
+
+      <slyd-group>
+
+        <slyd id="open-source">
+          <h1>open source</h1>
+          <a href="https://github.com/argyleink/slyd">View on GitHub</a>
+        </slyd>
+
+      </slyd-group>
+
+    </slyds>
+    
+    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CSet"></script>
+    <script src="bundle.js" type="module"></script>
+    
   </body>
 </html>

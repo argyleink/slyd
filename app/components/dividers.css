@@ -1,9 +1,18 @@
 hr {
-  margin: 3rem 0 !important;
-  width: 120%;
+  margin: 3rem -20% 3rem !important;
+  width: 140%;
   position: relative;
-  left: -10%;
   padding: 0;
   border-bottom: none;
   border-top: 1px solid var(--brand-color-2);
 }
+
+[push-top="0"] { margin-top: 0; }
+[push-top="1"] { margin-top: 2vmax; }
+[push-top="2"] { margin-top: 5vmax; }
+[push-top="3"] { margin-top: 10vmax; }
+
+[push-bottom="0"] { margin-bottom: 0; }
+[push-bottom="1"] { margin-bottom: 2vmax; }
+[push-bottom="2"] { margin-bottom: 5vmax; }
+[push-bottom="3"] { margin-bottom: 10vmax; }
