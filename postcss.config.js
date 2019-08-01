@@ -24,8 +24,10 @@ const prod_plugins = [
   postcssnano({preset: 'default'}),
 ]
 
+const plugins = is_prod
+  ? [...dev_plugins, ...prod_plugins]
+  : dev_plugins
+
 module.exports = {
-  plugins: is_prod
-    ? [...dev_plugins, ...prod_plugins]
-    : dev_plugins
+  plugins
 }
