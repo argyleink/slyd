@@ -1,7 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve'
 import postcss from 'rollup-plugin-postcss'
 import { terser } from "rollup-plugin-terser"
-
 import { default as importHTTP } from 'import-http/rollup'
 
 const is_prod = process.env.NODE_ENV
