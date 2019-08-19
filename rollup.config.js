@@ -30,7 +30,7 @@ export default {
   input: 'app/index.js',
   output: {
     file: is_prod ? 'dist/slyd.js' : 'app/slyd.js',
-    format: 'es',
+    format: is_prod ? 'iife' : 'es',
   },
   plugins,
   watch: {
