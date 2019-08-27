@@ -1,6 +1,6 @@
 ## Getting Started
-1. import the js `import 'https://slyd.netlify.com/bundle.js';` `400b`'s
-1. import the css `@import 'https://slyd.netlify.com/bundle.css';` `1.2kb`'s
+1. import the js `import 'https://slyd.netlify.com/slyd.js';` `17.7kb`'s
+1. import the css `@import 'https://slyd.netlify.com/slyd.css';` `3.1kb`'s
 
 OR
 
