@@ -1,8 +1,14 @@
 {
   "name": "slyd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Adam Argyle",
   "description": "Snappy bi-directional presentation framework",
+  "keywords": [
+    "slides",
+    "deck",
+    "presentation",
+    "slyd"
+  ],
   "main": "dist/slyd.js",
   "module": "app/slyd/index.js",
   "scripts": {
@@ -15,6 +21,11 @@
     "build": "npm run dist:js && npm run dist:css",
     "dist:js": "rollup -c --environment NODE_ENV:production",
     "dist:css": "postcss app/slyd/index.css -o dist/slyd.css"
+  },
+  "homepage": "https://slyd.netlify.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/argyleink/slyd"
   },
   "license": "ISC",
   "dependencies": {},
