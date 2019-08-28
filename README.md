@@ -1,14 +1,24 @@
 ## Getting Started
-1. import the js `import 'https://slyd.netlify.com/slyd.js';` `17.7kb`'s
-1. import the css `@import 'https://slyd.netlify.com/slyd.css';` `3.1kb`'s
+Load bundles from a url or use modules from NPM.
+
+> Note: there's no docs, just a demo site. the demo site is the best docs you have for the time being, I'll improve this. 
+
+## load from url
+1. `import 'https://slyd.netlify.com/slyd.js';`
+1. `@import 'https://slyd.netlify.com/slyd.css';`
 
 OR
 
 1. `npm i slyd`
-1. `import 'slyd';`
-1. `@import 'slyd';`
+1. `import 'slyd';` // use es module
+1. `@import 'slyd';` // (coming soon) import postCSS index
 
-Start making `<slyd>`'s!
+##### coming soon (load from Pika)
+
+<br>
+<br>
+
+Start making `<slyd>`'s by adding HTML to your page.
 
 ```html
 <slyds>
