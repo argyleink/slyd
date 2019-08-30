@@ -1,8 +1,8 @@
 {
   "name": "slyd",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Adam Argyle",
-  "description": "Snappy bi-directional presentation framework",
+  "description": "Snappy, responsive, touch optimized, bi-directional presentation framework",
   "keywords": [
     "slides",
     "deck",
