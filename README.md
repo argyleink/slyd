@@ -3,6 +3,8 @@ Load bundles from a url or use modules from NPM.
 
 > Note: there's no docs, just a demo site. the demo site is the best docs you have for the time being, I'll improve this. 
 
+<br>
+
 ## load from url
 1. `import 'https://slyd.netlify.com/slyd.js';`
 1. `@import 'https://slyd.netlify.com/slyd.css';`
@@ -12,6 +14,10 @@ OR
 1. `npm i slyd`
 1. `import 'slyd';` // use es module
 1. `@import 'slyd';` // use postcss module
+
+OR
+
+1. Clone and go with this [Slyd starter](https://github.com/argyleink/slyd-starter)
 
 ##### coming soon (load from Pika)
 
