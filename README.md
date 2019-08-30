@@ -11,7 +11,7 @@ OR
 
 1. `npm i slyd`
 1. `import 'slyd';` // use es module
-1. `@import 'slyd';` // (coming soon) import postCSS index
+1. `@import 'slyd';` // use postcss module
 
 ##### coming soon (load from Pika)
 

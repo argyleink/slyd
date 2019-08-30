@@ -11,6 +11,7 @@
   ],
   "main": "dist/slyd.js",
   "module": "app/slyd/index.js",
+  "style": "app/slyd/index.css",
   "scripts": {
     "start": "npm run concurrent",
     "concurrent": "concurrently --kill-others \"npm run dev:js\" \"npm run dev:css\" \"npm run dev:server\"",
