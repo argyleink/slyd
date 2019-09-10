@@ -36,9 +36,9 @@ code[class*="language-"], pre[class*="language-"] {
     color: var(--text-color-1);
   }
 
-  &:matches(.property, .tag, .function, .comment) {
+  /* &:matches(.property, .tag, .function, .comment) {
     font-style: italic;
-  }
+  } */
 }
 
 .line-numbers-rows > span:before {
