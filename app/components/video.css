@@ -14,4 +14,10 @@ video {
     height: 100%;
     object-fit: cover;
   }
+
+  &[background-video] {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
