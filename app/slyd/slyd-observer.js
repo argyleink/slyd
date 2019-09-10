@@ -14,7 +14,7 @@ if (window.hasOwnProperty('IntersectionObserver')) {
         cb(slyd))
   }, {
     root: document.querySelector('slyds'),
-    rootMargin: '0px',
+    rootMargin: '0px 0px 1px 0px',
     threshold: 1,
   })
 

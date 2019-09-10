@@ -19,12 +19,12 @@ slyd-group {
   /* scrollbar-color: light;
   -webkit-scrollbar-color: light; */
 
-  &::-webkit-scrollbar {
+  /* &::-webkit-scrollbar {
     width: 1px;
     background-color: var(--surface-1);
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: var(--brand-color-1);
-  }
+  } */
 }
