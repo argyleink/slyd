@@ -4,11 +4,12 @@
 @import '../components/typography.css';
 @import '../components/colors.css';
 @import '../components/layouts.css';
+@import '../components/depth.css';
 
 @import '../components/slyds.css';
-@import '../components/slyd-group.css';
 @import '../components/slyd.css';
-@import '../components/depth.css';
+@import '../components/slyd-group.css';
+@import '../components/slyd-arrows.css';
 
 @import '../components/button.css';
 @import '../components/lists.css';

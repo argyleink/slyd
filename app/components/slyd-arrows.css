@@ -1,0 +1,45 @@
+slyds {
+  & > slyd-group > slyd:first-child:after {
+    content: "↓";
+    position: absolute;
+    bottom: 2vh;
+    left: calc(50vw - .5em);
+    color: var(--text-color-2);
+    font-size: 2vmax;
+
+    animation: bounce-down 2s ease-in-out infinite;
+  }
+
+  & > slyd:after,
+  & > slyd-group:not(:last-child) > slyd:last-child:after {
+    content: "→";
+    position: absolute;
+    bottom: calc(50vh - .5em);
+    right: 2vw;
+    color: var(--text-color-2);
+    font-size: 2vmax;
+
+    animation: bounce-right 2s ease-in-out infinite;
+  }
+
+  & > slyd-group:last-child > slyd:last-child:after {
+    content: "✓";
+    position: absolute;
+    bottom: 1vh;
+    left: calc(50vw - .5em);
+    color: white;
+    font-size: 4vmax;
+  }
+}
+
+@keyframes bounce-down {
+  50% {
+    transform: translateY(1vmax);
+  }
+}
+
+@keyframes bounce-right {
+  50% {
+    transform: translateX(1vmax);
+  }
+}
