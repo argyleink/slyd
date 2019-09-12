@@ -5,7 +5,7 @@ slyds {
     bottom: 2vh;
     left: calc(50vw - .5em);
     color: var(--text-color-2);
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     animation: bounce-down 2s ease-in-out infinite;
   }
@@ -17,7 +17,7 @@ slyds {
     bottom: calc(50vh - .5em);
     right: 2vw;
     color: var(--text-color-2);
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     animation: bounce-right 2s ease-in-out infinite;
   }
@@ -28,7 +28,7 @@ slyds {
     bottom: 1vh;
     left: calc(50vw - .5em);
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
