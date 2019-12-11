@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/634baf91-9509-4983-8e3b-c7093c29603d/deploy-status)](https://app.netlify.com/sites/slyd/deploys)
+
 ## Getting Started
 Load bundles from a url or use modules from NPM.
 
