@@ -48,5 +48,5 @@ Start making `<slyd>`'s by adding HTML to your page.
   </slyd-group>
   
   <slyd-group>...</slyd-group>
-<slyds>
+</slyds>
 ```
