@@ -5,9 +5,10 @@ button {
   --bg-hover: hsl(var(--button-theme) 50% 80%);
   --text: hsl(var(--button-theme) 60% 15%);
 
-  height: 2.5em;
+  block-size: 2.5em;
   cursor: pointer;
   display: inline-grid;
+  align-items: center;
   position: relative;
   gap: .5em;
   grid-auto-flow: columns;
@@ -42,7 +43,7 @@ button {
     top: 2px;
   }
 
-  &:focus:not(:focus-visible) { 
+  &:focus-visible { 
     outline: none;
   }
 

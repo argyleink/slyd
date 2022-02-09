@@ -12,11 +12,17 @@ const dev_plugins = [
   postcssImport(),
   postcssPresetEnv({
     stage: 0,
-    browsers: [
-      '>0.25%',
-      'not ie 11',
-      'not op_mini all',
-    ],
+    features: {
+      'logical-properties-and-values': false, 
+      'prefers-color-scheme-query': false, 
+      'gap-properties': false,
+      'custom-properties': false,
+      'place-properties': false,
+      'not-pseudo-class': false,
+      'focus-visible-pseudo-class': false,
+      'focus-within-pseudo-class': false,
+      'color-functional-notation': false,
+    }
   }),
 ]
 

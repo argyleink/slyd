@@ -8,9 +8,7 @@ const is_prod = process.env.NODE_ENV
   : false
 
 const dev_plugins = [
-  resolve({
-    jsnext: true,
-  }),
+  resolve(),
   importHTTP(),
   postcss({
     extract: false,
