@@ -20,23 +20,23 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .token {
-  &:matches(.property, .keyword, .tag, .function) {
+  &:is(.property, .keyword, .tag, .function) {
     color: var(--brand-color-1);
   }
 
-  &:matches(.selector, .attr-name, .string, .operator, .char, .builtin, .inserted) {
+  &:is(.selector, .attr-name, .string, .operator, .char, .builtin, .inserted) {
     color: var(--brand-color-2);
   }
 
-  &:matches(.parameter, .punctuation) {
+  &:is(.parameter, .punctuation) {
     color: var(--brand-color-3);
   }
 
-  &:matches(.attr-value) {
+  &:is(.attr-value) {
     color: var(--text-color-1);
   }
 
-  /* &:matches(.property, .tag, .function, .comment) {
+  /* &:is(.property, .tag, .function, .comment) {
     font-style: italic;
   } */
 }
