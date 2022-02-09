@@ -1,4 +1,4 @@
-slyds { perspective: 30px; }
+slyd-group { perspective: 30px; }
 
 [depth-7]
 pre { transform: translateZ(10px); }
