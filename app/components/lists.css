@@ -24,7 +24,7 @@ ul {
   & > li:before {
     position: relative;
     top: -0.075em;
-    margin-right: 1rem;
+    margin-inline-end: 1rem;
   }
 }
 

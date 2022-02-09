@@ -1,7 +1,7 @@
 blockquote {
   text-align: center;
   position: relative;
-  margin: 0 10%;
+  margin-inline: 10%;
   font-family: var(--serif);
 
   --fluid-type-min-size: 2;
@@ -38,8 +38,8 @@ blockquote {
       display: block;
       margin: 0 auto 1em;
       content: "";
-      width: 1em;
-      height: 1px;
+      inline-size: 1em;
+      block-size: 1px;
       background-color: var(--brand-color-2);
     }
   }
