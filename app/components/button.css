@@ -43,7 +43,7 @@ button {
     top: 2px;
   }
 
-  &:focus:not(:focus-visible) { 
+  &:focus-visible { 
     outline: none;
   }
 
