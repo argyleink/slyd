@@ -8,6 +8,7 @@ button {
   height: 2.5em;
   cursor: pointer;
   display: inline-grid;
+  align-items: center;
   position: relative;
   gap: .5em;
   grid-auto-flow: columns;
