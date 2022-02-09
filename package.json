@@ -1,6 +1,6 @@
 {
   "name": "slyd",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": "Adam Argyle",
   "description": "Snappy, responsive, touch optimized, bi-directional presentation framework",
   "keywords": [
@@ -31,19 +31,19 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "concurrently": "^4.1.0",
-    "cssnano": "^4.1.10",
+    "browser-sync": "^2.27.7",
+    "concurrently": "^7.0.0",
+    "cssnano": "^5.0.17",
     "import-http": "^0.3.1",
-    "postcss": "^7.0.14",
-    "postcss-cli": "^6.1.2",
-    "postcss-easings": "^2.0.0",
-    "postcss-import": "^12.0.1",
-    "postcss-loader": "^3.0.0",
-    "postcss-preset-env": "^6.5.0",
-    "rollup": "^1.10.1",
-    "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-terser": "^5.1.1"
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "postcss-easings": "^3.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.3.1",
+    "rollup": "^2.67.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
